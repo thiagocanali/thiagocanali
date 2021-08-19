@@ -7,4 +7,4 @@
 - 🔭 Hoje trabalho com front-end.
 - 🌱 Estudando Typescript
 - 📫 E-mail: thi.98.cwb@hotmail.com
-- ⚡ Mais informações: tiny.cc/q8f4mz
+- ⚡ Mais informações: https://tiny.cc/q8f4mz
