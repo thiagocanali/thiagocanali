@@ -5,6 +5,6 @@
 -->
 
 - 🔭 Hoje trabalho com front-end.
-- 🌱 Estudando Typescript
+- 🌱 Estudando Javascript e Typescript
 - 📫 E-mail: thi.98.cwb@hotmail.com
 - ⚡ Mais informações: https://tiny.cc/q8f4mz
