@@ -5,6 +5,6 @@
 -->
 
 - 🔭 Hoje trabalho com front-end.
-- 🌱 Estudando Javascript e Typescript
+- 🌱 Estudando: Dart, Flutter, Javascript, Typescript, Angular, Ionic, Java...
 - 📫 E-mail: thi.98.cwb@hotmail.com
-- ⚡ Mais informações: https://tiny.cc/q8f4mz
+- ⚡ Mais informações: https://abre.ai/thiagocanali
