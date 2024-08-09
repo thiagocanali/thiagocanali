@@ -10,3 +10,5 @@
 - 📸 Instagram: https://www.instagram.com/thiagocanali/
 - ⚡ Mais informações: https://abre.ai/thiagocanali
 - 🌱 Outras informações: https://linktr.ee/thiagocanali
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)
