@@ -12,3 +12,5 @@
 - 🌱 Outras informações: https://linktr.ee/thiagocanali
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=thiagocanali&layout=compact)
+
+[![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=thiagocanali)]
