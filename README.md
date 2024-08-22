@@ -5,7 +5,7 @@
 -->
 
 - 🔭 Atualmente atuo como Desenvolvedor de Software Web e Mobile (FullStack).
-- 👨‍💻 Estudando: Flutter, Angular, Ionic, Node, Vue, Java, Python...
+- 👨‍💻 Estudando: Flutter, Angular, Ionic, Node, Vue, Java, Python, Php...
 - 📫 E-mail: thi.98.cwb@hotmail.com
 - 📸 Instagram: [@thiagocanali](https://www.instagram.com/thiagocanali/)
 - ⚡ Mais informações: https://abre.ai/thiagocanali
