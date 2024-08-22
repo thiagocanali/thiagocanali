@@ -4,7 +4,7 @@
 **thiagocanali/thiagocanali** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 -->
 
-  *Se você trabalha com o que você gosta, você é feliz na vida.*
+  *"Se você trabalha com o que você gosta, você é feliz na vida."*
 
 - 🔭 Atualmente atuo como Desenvolvedor de Software FullStack e curto desenvolver tanto para Web quanto Mobile.
 - 👨‍💻 Estudando: Flutter, Angular, Ionic, Node, Vue, Java, Python, Php...
