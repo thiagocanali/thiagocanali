@@ -10,6 +10,7 @@
 - 📸 Instagram: [@thiagocanali](https://www.instagram.com/thiagocanali/)
 - ⚡ Mais informações: https://abre.ai/thiagocanali
 - 🌱 Outras informações: https://linktr.ee/thiagocanali
+- 💼📊 LinkedIn: https://www.linkedin.com/in/thiagocanali
 
 
 
