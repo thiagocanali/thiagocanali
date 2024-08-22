@@ -4,7 +4,7 @@
 **thiagocanali/thiagocanali** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 -->
 
-- 🔭 Atualmente atuo como Desenvolvedor de Software FullStack e curto desenvolver tanto para Web quanto Mobile.
+- 🔭 Atualmente atuo como Desenvolvedor de Software FullStack, curto desenvolver tanto para Web quanto Mobile.
 - 👨‍💻 Estudando: Flutter, Angular, Ionic, Node, Vue, Java, Python, Php...
 - 📫 E-mail: thi.98.cwb@hotmail.com
 - 📸 Instagram: [@thiagocanali](https://www.instagram.com/thiagocanali/)
