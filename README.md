@@ -8,8 +8,6 @@
 - 👨‍💻 Estudando: Flutter, Angular, Ionic, Node, Vue, Java, Python, Php...
 - 📫 E-mail: thi.98.cwb@hotmail.com
 - 📸 Instagram: [@thiagocanali](https://www.instagram.com/thiagocanali/)
-- ⚡ Mais informações: https://abre.ai/thiagocanali
-- 🌱 Outras informações: https://linktr.ee/thiagocanali
 - 💼📊 LinkedIn: https://www.linkedin.com/in/thiagocanali
 
 
