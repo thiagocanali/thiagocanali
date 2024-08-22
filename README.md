@@ -11,6 +11,7 @@
 - ⚡ Mais informações: https://abre.ai/thiagocanali
 - 🌱 Outras informações: https://linktr.ee/thiagocanali
 
+
    *"Se você trabalha com o que você gosta, você é feliz na vida."*
 
  ![thiagocanali's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=thiagocanali&theme=gotham&show_icons=true&hide_border=true&layout=compact)
