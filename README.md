@@ -11,7 +11,7 @@
 
 
 
-   *"Se você trabalha com o que você gosta, o trabalho fica mais fácil."*
+   *"Se você trabalha com o que você gosta, o trabalho se torna uma diversão."*
 
  ![thiagocanali's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=thiagocanali&theme=gotham&show_icons=true&hide_border=true&layout=compact)
  
