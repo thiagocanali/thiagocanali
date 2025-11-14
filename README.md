@@ -18,11 +18,11 @@
 - 👀 Se liga nos meus projetos públicos mais recentes:
 
 - Mapa NOC 24x7:
-- https://thiagocanali.github.io/my-noc-map
+- Link: https://thiagocanali.github.io/my-noc-map
 - Código: https://github.com/thiagocanali/my-noc-map
 
 - Escala NOC 24x7
-- https://thiagocanali.github.io/my-schedu/
+- Link: https://thiagocanali.github.io/my-schedu/
 - Código: https://github.com/thiagocanali/my-schedu
 
 
