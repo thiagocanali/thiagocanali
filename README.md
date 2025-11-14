@@ -1,4 +1,4 @@
-### Olá, eu sou Thiago Schwartz 👋
+### Seja bem vindo ao meu perfil, sou o Thiago Schwartz. 👋
 
 <!--
 **thiagocanali/thiagocanali** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -13,24 +13,27 @@
 
 #
 
-- 👀 Se liga nos meus projetos públicos mais recentes:
+- 👀 Da uma olhada nos meus projetos públicos recentes:
 
 - Mapa NOC 24x7:
 - Link: https://thiagocanali.github.io/my-noc-map
 - Código: https://github.com/thiagocanali/my-noc-map
-\
+
 - Escala NOC 24x7
 - Link: https://thiagocanali.github.io/my-schedu/
 - Código: https://github.com/thiagocanali/my-schedu
 
 
+
 #
   
-
 ![thiagocanali's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=thiagocanali&theme=gotham&show_icons=true&hide_border=true&layout=compact)
  
 ![thiagocanali's Stats](https://github-readme-stats.vercel.app/api?username=thiagocanali&theme=gotham&show_icons=true&hide_border=true&count_private=true)
 
 ![thiagocanali's Streak](https://github-readme-streak-stats.herokuapp.com/?user=thiagocanali&theme=gotham&hide_border=true)
 
-✟ = ♡ | Lc 5:32
+
+
+  ```python
+    ✟ = ♡ | Lc 5:32
