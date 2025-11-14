@@ -6,8 +6,8 @@
 
 - 🔭 Atualmente atuo como Desenvolvedor de Software FullStack, desenvolvo tanto para Web quanto Mobile.
 - 👨‍💻 Estudando: Vue, Flutter, Angular, Ionic, React, Node, Java, Python, Php, Firebase...
-- 📫 E-mail: thiagocanali@hotmail.com
-- 💼📊 LinkedIn: https://www.linkedin.com/in/thiagocanali
+- 💼 LinkedIn: [@thiagocanali](https://www.linkedin.com/in/thiagocanali)
+- 📫 E-mail: [thiagocanali@hotmail.com](mailto:thiagocanali@hotmail.com)
 
    *"Se você trabalha com o que você gosta, o trabalho se torna uma diversão."*
 
