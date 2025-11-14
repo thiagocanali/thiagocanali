@@ -14,7 +14,6 @@
    *"Se você trabalha com o que você gosta, o trabalho se torna uma diversão."*
 
 #
-#
 
 - 👀 Se liga nos meus projetos públicos mais recentes:
 
@@ -27,7 +26,6 @@
 - Código: https://github.com/thiagocanali/my-schedu
 
 
-#
 #
   
 
