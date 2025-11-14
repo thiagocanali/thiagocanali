@@ -13,6 +13,8 @@
 
    *"Se você trabalha com o que você gosta, o trabalho se torna uma diversão."*
 
+#
+#
 
 - 👀 Se liga nos meus projetos públicos mais recentes:
 
@@ -24,6 +26,9 @@
 - https://thiagocanali.github.io/my-schedu/
 - Código: https://github.com/thiagocanali/my-schedu
 
+
+#
+#
   
 
  ![thiagocanali's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=thiagocanali&theme=gotham&show_icons=true&hide_border=true&layout=compact)
