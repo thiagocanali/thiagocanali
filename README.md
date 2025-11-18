@@ -17,6 +17,7 @@
 
   - [Mapa NOC 24x7](https://thiagocanali.github.io/my-noc-map)
   - [Escala NOC 24x7](https://thiagocanali.github.io/my-schedu/)
+  - [Teste de Velocidade de Conexão](https://thiagocanali.github.io/my-speedtest/)
 
 
 #
