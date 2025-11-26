@@ -13,7 +13,7 @@
 
 #
 
-- 👀 Da uma olhada nos meus projetos públicos recentes:
+- 👀 Da uma olhada nos meus projetos públicos recentes, alguns ainda em desenvolvimento:
 
   - [Mapa NOC 24x7](https://thiagocanali.github.io/my-noc-map)
   - [Escala NOC 24x7](https://thiagocanali.github.io/my-schedu/)
