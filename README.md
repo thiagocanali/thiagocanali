@@ -15,12 +15,13 @@
 
 - 👀 Da uma olhada nos meus projetos públicos recentes:
 
-  - [Clean Air BR](https://thiagocanali.github.io/cleanairbr)
-  - [Conectados em Cristo](https://thiagocanali.github.io/conectados-em-cristo)
-  - [Teste de Velocidade de Conexão](https://thiagocanali.github.io/my-speedtest/)
   - [Mapa NOC 24x7](https://thiagocanali.github.io/my-noc-map)
   - [Escala NOC 24x7](https://thiagocanali.github.io/my-schedu/)
-
+  - [Teste de Velocidade de Conexão](https://thiagocanali.github.io/my-speedtest/)
+  - [Clean Air BR](https://thiagocanali.github.io/cleanairbr)
+  - [Anelise Chagas](https://thiagocanali.github.io/anelisechagas)
+  - [Conectados em Cristo](https://thiagocanali.github.io/conectados-em-cristo)
+  
 
 
 #
