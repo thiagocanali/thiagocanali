@@ -1,74 +1,21 @@
-<!-- HEADER -->
+<!-- BANNER -->
 <div align="center">
-
-# 👋 Olá! Eu sou o **Thiago Canali Schwartz**
-
-💻 Desenvolvedor Full Stack • Infraestrutura • NOC & Monitoramento  
-🌎 Santa Catarina — Brasil  
-📌 Desenvolvimento de aplicações Web + suporte técnico e monitoramento 24x7
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0A192F,100:4f46e5&height=180&section=header&text=Thiago%20Canali%20Schwartz&fontColor=ffffff&fontSize=40&animation=fadeIn&fontAlignY=35"/>
+</div>
 
 <br>
 
-</div>
+## 👋 Olá, eu sou o Thiago!
 
----
+> Desenvolvedor Full Stack — focado em **Web e Mobile** <br>
+> Cristão • Amante de tecnologia • Sempre aprendendo
 
-## 🧑‍💻 Sobre mim
+- 🔭 Atualmente atuo como **Desenvolvedor de Software FullStack**
+- 👨‍💻 Principais stacks: Vue, Angular, Flutter, Node, Firebase
+- 🚀 Tenho experiência tanto com **front-end** quanto **mobile**
+- 📍 Brasil — Curitiba / PR
 
-Atuo no desenvolvimento de **aplicações web** e também na área de **infraestrutura de TI / NOC**, com foco em monitoramento, estabilidade e suporte técnico.
-
-Gosto de criar soluções simples e funcionais que resolvem problemas reais — seja programando interfaces modernas ou mantendo ambientes estáveis.
-
-- 💻 Desenvolvimento Web (frontend & backend)
-- 🛰 Monitoramento de infraestrutura (NOC 24x7)
-- 🧩 Integração de sistemas e automações
-- 🚀 Sempre estudando novas tecnologias e boas práticas
-
-> *"Se você trabalha com o que você gosta, o trabalho se torna uma diversão."*
-
----
-
-## 🚀 Projetos Recentes (GitHub Pages)
-
-<div align="center">
-
-<table>
-<tr>
-<td width="50%">
-
-### 🛰️ Mapa NOC 24x7  
-Monitoramento visual simples  
-👉 https://thiagocanali.github.io/my-noc-map
-
-</td>
-<td width="50%">
-
-### 📅 Escala NOC  
-Organização de turnos e plantões  
-👉 https://thiagocanali.github.io/my-schedu/
-
-</td>
-</tr>
-
-<tr>
-<td width="50%">
-
-### ⚡ Speed Test  
-Teste de velocidade de conexão  
-👉 https://thiagocanali.github.io/my-speedtest/
-
-</td>
-<td width="50%">
-
-### ❄️ Clean Air BR  
-Site institucional profissional  
-👉 https://thiagocanali.github.io/cleanairbr
-
-</td>
-</tr>
-</table>
-
-</div>
+<br>
 
 ---
 
@@ -76,16 +23,25 @@ Site institucional profissional
 
 <div align="center">
 
-### 💻 Desenvolvimento
-- HTML · CSS · JavaScript  
-- Vue.js · Node.js
+### 🔹 Front-end
+![Vue](https://img.shields.io/badge/Vue-35495E?logo=vue.js&logoColor=4FC08D)
+![Angular](https://img.shields.io/badge/Angular-20232A?logo=angular&logoColor=DD0031)
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61dafb)
 
-### 🛰 Infraestrutura / NOC
-- Monitoramento · Redes · Suporte Técnico  
-- Windows Server · Microsoft 365
+### 🔹 Mobile
+![Flutter](https://img.shields.io/badge/Flutter-000?logo=flutter&logoColor=55C9F8)
+![Ionic](https://img.shields.io/badge/Ionic-222?logo=ionic&logoColor=488AFF)
 
-### 🔧 Ferramentas
-- Git · GitHub · VScode  
+### 🔹 Back-end
+![Node](https://img.shields.io/badge/Node.js-000?logo=node.js)
+![Firebase](https://img.shields.io/badge/Firebase-000?logo=firebase)
+![Python](https://img.shields.io/badge/Python-000?logo=python)
+![PHP](https://img.shields.io/badge/PHP-000?logo=php)
+
+### 🔹 DevOps & Outros
+![Git](https://img.shields.io/badge/Git-000?logo=git)
+![Linux](https://img.shields.io/badge/Linux-000?logo=linux)
+![VSCode](https://img.shields.io/badge/VSCode-000?logo=visual-studio-code)
 
 </div>
 
@@ -93,34 +49,54 @@ Site institucional profissional
 
 ---
 
-## 📊 Estatísticas do GitHub
+## ⚡ Projetos em destaque
 
-<div align="center">
+<div align="left">
 
-<img height="160px" src="https://github-readme-stats.vercel.app/api?username=thiagocanali&show_icons=true&theme=react&hide_border=true&count_private=true" />
-<img height="160px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=thiagocanali&layout=compact&show_icons=true&theme=react&hide_border=true" />
+- 🗺️ [Mapa NOC 24x7](https://thiagocanali.github.io/my-noc-map)
+- 📊 [Escala NOC 24x7](https://thiagocanali.github.io/my-schedu/)
+- 🌐 [Teste de Velocidade de Conexão](https://thiagocanali.github.io/my-speedtest/)
+- 🧼 [Clean Air BR](https://thiagocanali.github.io/cleanairbr)
+- 💍 [Anelise Chagas](https://thiagocanali.github.io/anelisechagas)
+- ✝️ [Conectados em Cristo](https://thiagocanali.github.io/conectados-em-cristo)
+
+</div>
 
 <br>
 
-<img height="180px" src="https://github-readme-streak-stats.herokuapp.com/?user=thiagocanali&theme=react&hide_border=true"/>
-
-</div>
-
 ---
 
-## 📬 Contato
-
-- 💼 LinkedIn: https://www.linkedin.com/in/thiagocanali
-- 📫 E-mail: **thiagocanali@hotmail.com**
-
----
+## 📊 Estatísticas
 
 <div align="center">
 
-✟ *Lucas 5:32 — "Eu não vim chamar os justos, mas os pecadores, ao arrependimento."*
+![GitHub Stats](https://github-readme-stats-godkingjay.vercel.app/api?username=thiagocanali&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
 
-<br><br>
+![Top Langs](https://github-readme-stats-godkingjay.vercel.app/api/top-langs/?username=thiagocanali&layout=compact&theme=tokyonight&hide_border=true)
 
-⭐ Se gostou de algum projeto, deixe uma estrela!
+![GitHub Streak](https://streak-stats.demolab.com/?user=thiagocanali&theme=tokyonight&hide_border=true)
 
 </div>
+
+<br>
+
+---
+
+## 🌐 Onde me encontrar
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0066c8?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thiagocanali)
+[![Email](https://img.shields.io/badge/Email-6a6a6a?logo=gmail&logoColor=white)](mailto:thiagocanali@hotmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-000?logo=github&logoColor=white)](https://github.com/thiagocanali)
+
+</div>
+
+<br>
+
+---
+
+## ✟ Versículo que me inspira
+
+```python
+✟ = ♡ | Lc 5:32
