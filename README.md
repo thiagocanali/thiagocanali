@@ -82,7 +82,7 @@
 ## ✟ Versículo que me inspira
 
 ```python
-✟ = ♡ | Lc 5:32 | "Não vim chamar os justos, mas os pecadores, ao arrependimento."
+✟ = ♡ | "Não vim chamar os justos, mas os pecadores, ao arrependimento." | Lc 5:32
 ```
 
 <br>
