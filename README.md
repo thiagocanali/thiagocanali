@@ -66,22 +66,6 @@
 
 ---
 
-## 📊 Estatísticas
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats-godkingjay.vercel.app/api?username=thiagocanali&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
-
-![Top Langs](https://github-readme-stats-godkingjay.vercel.app/api/top-langs/?username=thiagocanali&layout=compact&theme=tokyonight&hide_border=true)
-
-![GitHub Streak](https://streak-stats.demolab.com/?user=thiagocanali&theme=tokyonight&hide_border=true)
-
-</div>
-
-<br>
-
----
-
 ## 🌐 Onde me encontrar
 
 <div align="center">
@@ -98,11 +82,11 @@
 
 ## ✟ Versículo que me inspira
 
+"Não vim chamar os justos, mas os pecadores, ao arrependimento."
+
 ```python
 ✟ = ♡ | Lc 5:32
 ```
-
-"Não vim chamar os justos, mas os pecadores, ao arrependimento."
 
 <br>
 <div align="center"> <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:4f46e5,100:0A192F&height=120&section=footer"/> </div>
