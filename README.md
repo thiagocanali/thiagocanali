@@ -40,7 +40,7 @@
 - 🌐 [Teste de Velocidade](https://thiagocanali.github.io/my-speedtest/)
 - 🧼 [Clean Air BR](https://thiagocanali.github.io/cleanairbr)
 - ✝️ [Conectados em Cristo](https://thiagocanali.github.io/conectados-em-cristo)
--ㅤΨ [Anelise Chagas](https://thiagocanali.github.io/anelisechagas)
+- Ψㅤ[Anelise Chagas](https://thiagocanali.github.io/anelisechagas)
 
 <br>
 
