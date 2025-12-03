@@ -1,11 +1,11 @@
 <!-- HEADER -->
 <div align="center">
 
-# 👋 Olá! Eu sou o **Thiago Schwartz Canali**
+# 👋 Olá! Eu sou o **Thiago Canali Schwartz**
 
-💻 Desenvolvedor Full Stack · Vue.js · Flutter  
-🌐 Infra NOC · Redes · Windows Server  
-✟ Cristão | Lucas 5:32
+💻 Desenvolvedor Full Stack • Infraestrutura • NOC & Monitoramento  
+🌎 Santa Catarina — Brasil  
+📌 Desenvolvimento de aplicações Web + suporte técnico e monitoramento 24x7
 
 <br>
 
@@ -13,82 +13,79 @@
 
 ---
 
-<!-- ABOUT -->
-## Sobre mim
+## 🧑‍💻 Sobre mim
 
-Sou desenvolvedor **Full Stack** com foco em aplicações Web e Mobile.  
-Trabalho também com infraestrutura **NOC 24x7**, monitoramento e suporte técnico.
+Atuo no desenvolvimento de **aplicações web** e também na área de **infraestrutura de TI / NOC**, com foco em monitoramento, estabilidade e suporte técnico.
 
-- 🔭 Atualmente trabalhando em projetos reais com **Vue, Flutter e Firebase**
-- 📚 Estudando **segurança da informação, redes, DevOps e boas práticas de arquitetura**
-- 🎧 Programo ouvindo rap cristão 😎
+Gosto de criar soluções simples e funcionais que resolvem problemas reais — seja programando interfaces modernas ou mantendo ambientes estáveis.
+
+- 💻 Desenvolvimento Web (frontend & backend)
+- 🛰 Monitoramento de infraestrutura (NOC 24x7)
+- 🧩 Integração de sistemas e automações
+- 🚀 Sempre estudando novas tecnologias e boas práticas
 
 > *"Se você trabalha com o que você gosta, o trabalho se torna uma diversão."*
 
 ---
 
-<!-- PROJECTS -->
-## 🚀 Projetos Destaque
+## 🚀 Projetos Recentes (GitHub Pages)
 
 <div align="center">
 
 <table>
 <tr>
 <td width="50%">
-  
+
 ### 🛰️ Mapa NOC 24x7  
-Sistema de monitoramento visual  
-👉 https://thiagocanali.github.io/my-noc-map  
+Monitoramento visual simples  
+👉 https://thiagocanali.github.io/my-noc-map
 
 </td>
 <td width="50%">
-  
+
 ### 📅 Escala NOC  
-Gerenciamento simples de turnos  
-👉 https://thiagocanali.github.io/my-schedu/  
+Organização de turnos e plantões  
+👉 https://thiagocanali.github.io/my-schedu/
 
 </td>
 </tr>
 
 <tr>
 <td width="50%">
-  
+
 ### ⚡ Speed Test  
-Teste de velocidade personalizado  
-👉 https://thiagocanali.github.io/my-speedtest/  
+Teste de velocidade de conexão  
+👉 https://thiagocanali.github.io/my-speedtest/
 
 </td>
 <td width="50%">
-  
+
 ### ❄️ Clean Air BR  
 Site institucional profissional  
-👉 https://thiagocanali.github.io/cleanairbr  
+👉 https://thiagocanali.github.io/cleanairbr
 
 </td>
 </tr>
-
 </table>
 
 </div>
 
 ---
 
-<!-- STACK -->
 ## 🛠️ Tecnologias & Ferramentas
 
 <div align="center">
 
-### Frontend
-Vue · Angular · React · Tailwind · Ionic
+### 💻 Desenvolvimento
+- HTML · CSS · JavaScript  
+- Vue.js · Node.js
 
-### Mobile
-Flutter · Dart
+### 🛰 Infraestrutura / NOC
+- Monitoramento · Redes · Suporte Técnico  
+- Windows Server · Microsoft 365
 
-### Backend
-Node.js · Firebase · Express
-
-### Infraestrutura / NOC
-Microsoft 365 · Windows Server · VMware · Unifi · Acronis · VPN
+### 🔧 Ferramentas
+- Git · GitHub · VScode  
 
 </div>
 
@@ -96,7 +93,6 @@ Microsoft 365 · Windows Server · VMware · Unifi · Acronis · VPN
 
 ---
 
-<!-- STATS -->
 ## 📊 Estatísticas do GitHub
 
 <div align="center">
@@ -112,21 +108,19 @@ Microsoft 365 · Windows Server · VMware · Unifi · Acronis · VPN
 
 ---
 
-<!-- CONTACT -->
-## 📬 Onde me encontrar
+## 📬 Contato
 
-- 💼 LinkedIn: https://www.linkedin.com/in/thiagocanali  
+- 💼 LinkedIn: https://www.linkedin.com/in/thiagocanali
 - 📫 E-mail: **thiagocanali@hotmail.com**
 
 ---
 
-<!-- FOOTER -->
 <div align="center">
-  
+
 ✟ *Lucas 5:32 — "Eu não vim chamar os justos, mas os pecadores, ao arrependimento."*
 
 <br><br>
 
-⭐ Se gostou de algum projeto, deixe uma estrela no repositório!
+⭐ Se gostou de algum projeto, deixe uma estrela!
 
 </div>
