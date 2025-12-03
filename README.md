@@ -35,32 +35,32 @@
 
 <div align="center">
 
-### 🔹 Linguagens
+### Linguagens
 <span class="card-hover">![Java](https://img.shields.io/badge/Java-000?logo=openjdk)</span>
 <span class="card-hover">![JavaScript](https://img.shields.io/badge/JavaScript-000?logo=javascript)</span>
 <span class="card-hover">![TypeScript](https://img.shields.io/badge/TypeScript-000?logo=typescript)</span>
 <span class="card-hover">![Python](https://img.shields.io/badge/Python-000?logo=python)</span>
 <span class="card-hover">![PHP](https://img.shields.io/badge/PHP-000?logo=php)</span>
 
-### 🔹 Front-end
+### Front-end
 <span class="card-hover">![Vue](https://img.shields.io/badge/Vue-35495E?logo=vue.js&logoColor=4FC08D)</span>
 <span class="card-hover">![Angular](https://img.shields.io/badge/Angular-20232A?logo=angular&logoColor=DD0031)</span>
 <span class="card-hover">![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61dafb)</span>
 
-### 🔹 Mobile
+### Mobile
 <span class="card-hover">![Flutter](https://img.shields.io/badge/Flutter-000?logo=flutter&logoColor=55C9F8)</span>
 <span class="card-hover">![Ionic](https://img.shields.io/badge/Ionic-222?logo=ionic&logoColor=488AFF)</span>
 
-### 🔹 Back-end & Cloud
+### Back-end & Cloud
 <span class="card-hover">![Node](https://img.shields.io/badge/Node.js-000?logo=node.js)</span>
 <span class="card-hover">![Firebase](https://img.shields.io/badge/Firebase-000?logo=firebase)</span>
 
-### 🔹 Bancos de Dados
+### Bancos de Dados
 <span class="card-hover">![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000?logo=postgresql)</span>
 <span class="card-hover">![MySQL](https://img.shields.io/badge/MySQL-000?logo=mysql)</span>
 <span class="card-hover">![MongoDB](https://img.shields.io/badge/MongoDB-000?logo=mongodb)</span>
 
-### 🔹 DevOps & Outros
+### DevOps & Outros
 <span class="card-hover">![Git](https://img.shields.io/badge/Git-000?logo=git)</span>
 <span class="card-hover">![Linux](https://img.shields.io/badge/Linux-000?logo=linux)</span>
 <span class="card-hover">![VSCode](https://img.shields.io/badge/VSCode-000?logo=visual-studio-code)</span>
