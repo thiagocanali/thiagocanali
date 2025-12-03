@@ -13,7 +13,6 @@
 - 🔭 Atualmente atuo como **Desenvolvedor de Software FullStack**
 - 👨‍💻 Principais stacks: Vue, Angular, Flutter, Node, Firebase
 - 🚀 Tenho experiência tanto com **front-end** quanto **mobile**
-- 📍 Brasil — Curitiba / PR
 
 <br>
 
