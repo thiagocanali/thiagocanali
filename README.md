@@ -13,7 +13,7 @@
 - 🔭 Atualmente atuo como **Desenvolvedor de Software FullStack**
 - 👨‍💻 Principais stacks: Vue, Angular, Flutter, Node, Firebase
 - 🚀 Tenho experiência tanto com **front-end** quanto **mobile**
-
+- 
 <br>
 
 ---
@@ -81,10 +81,8 @@
 
 ## ✟ Versículo que me inspira
 
-"Não vim chamar os justos, mas os pecadores, ao arrependimento."
-
 ```python
-✟ = ♡ | Lc 5:32
+✟ = ♡ | Lc 5:32 | "Não vim chamar os justos, mas os pecadores, ao arrependimento."
 ```
 
 <br>
