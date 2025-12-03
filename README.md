@@ -39,7 +39,7 @@
 - 📊 [Escala NOC 24x7](https://thiagocanali.github.io/my-schedu/)
 - 🌐 [Teste de Velocidade](https://thiagocanali.github.io/my-speedtest/)
 - 🧼 [Clean Air BR](https://thiagocanali.github.io/cleanairbr)
-- 💍 [Anelise Chagas](https://thiagocanali.github.io/anelisechagas)
+-  Ψ  [Anelise Chagas](https://thiagocanali.github.io/anelisechagas)
 - ✝️ [Conectados em Cristo](https://thiagocanali.github.io/conectados-em-cristo)
 
 <br>
