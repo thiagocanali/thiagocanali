@@ -31,6 +31,21 @@
 
 ---
 
+## ⚡ Projetos em destaque
+
+> Alguns projetos públicos disponíveis no GitHub Pages
+
+- 🗺️ [Mapa NOC 24x7](https://thiagocanali.github.io/my-noc-map)
+- 📊 [Escala NOC 24x7](https://thiagocanali.github.io/my-schedu/)
+- 🌐 [Teste de Velocidade](https://thiagocanali.github.io/my-speedtest/)
+- 🧼 [Clean Air BR](https://thiagocanali.github.io/cleanairbr)
+- 💍 [Anelise Chagas](https://thiagocanali.github.io/anelisechagas)
+- ✝️ [Conectados em Cristo](https://thiagocanali.github.io/conectados-em-cristo)
+
+<br>
+
+---
+
 ## 🛠 Tecnologias & Ferramentas
 
 <div align="center">
@@ -66,21 +81,6 @@
 <span class="card-hover">![VSCode](https://img.shields.io/badge/VSCode-000?logo=visual-studio-code)</span>
 
 </div>
-
-<br>
-
----
-
-## ⚡ Projetos em destaque
-
-> Alguns projetos públicos disponíveis no GitHub Pages
-
-- 🗺️ [Mapa NOC 24x7](https://thiagocanali.github.io/my-noc-map)
-- 📊 [Escala NOC 24x7](https://thiagocanali.github.io/my-schedu/)
-- 🌐 [Teste de Velocidade](https://thiagocanali.github.io/my-speedtest/)
-- 🧼 [Clean Air BR](https://thiagocanali.github.io/cleanairbr)
-- 💍 [Anelise Chagas](https://thiagocanali.github.io/anelisechagas)
-- ✝️ [Conectados em Cristo](https://thiagocanali.github.io/conectados-em-cristo)
 
 <br>
 
