@@ -33,14 +33,6 @@
 
 ## 🛠 Tecnologias & Ferramentas
 
-<style>
-.card-hover:hover {
-  transform: translateY(-6px);
-  transition: 0.3s;
-  filter: drop-shadow(0px 0px 8px #4f46e5aa);
-}
-</style>
-
 <div align="center">
 
 ### 🔹 Linguagens
