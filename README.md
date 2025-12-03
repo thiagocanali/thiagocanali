@@ -93,7 +93,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0066c8?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thiagocanali)
 [![Email](https://img.shields.io/badge/Email-6a6a6a?logo=gmail&logoColor=white)](mailto:thiagocanali@hotmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-000?logo=github&logoColor=white)](https://github.com/thiagocanali)
-[![YouTube](https://img.shields.io/badge/YouTube-000?logo=github&logoColor=white)](https://www.youtube.com/@thiago.canali)
+[![YouTube](https://img.shields.io/badge/YouTube-000?logo=youtube&logoColor=white)](https://www.youtube.com/@thiago.canali)
 
 </div>
 
