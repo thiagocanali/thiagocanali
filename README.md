@@ -25,7 +25,7 @@
 
 - 🔭 Atualmente atuo como **Desenvolvedor de Software FullStack**
 - 👨‍💻 Principais stacks: Vue, Angular, Flutter, Node, Firebase
-- 🚀 Experiência tanto com **front-end** quanto **mobile**
+- 🚀 Experiência em desenvolvimento **front-end, back-end e mobile**.
 
 <br>
 
