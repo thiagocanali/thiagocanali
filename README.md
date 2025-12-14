@@ -41,7 +41,7 @@
 - 🌀 [Clean Air BR](https://thiagocanali.github.io/cleanairbr)
 - 🦉 [Anelise Chagas](https://thiagocanali.github.io/anelisechagas)
 - ✝️ [Conectados em Cristo](https://thiagocanali.github.io/conectados-em-cristo)
-- ⛪ [pibpb](https://thiagocanali.github.io/pibpb)
+- ⛪ [PIBPB](https://thiagocanali.github.io/pibpb)
 
   
 
