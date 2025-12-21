@@ -24,7 +24,7 @@
 > Cristão • Amante de tecnologia • Sempre aprendendo
 
 - 🔭 Atualmente atuo como **Desenvolvedor de Software FullStack**
-- 👨‍💻 Principais stacks: Vue, Angular, Flutter, Node, Firebase
+- 👨‍💻 Principais stacks: Vue, Angular, Flutter, Node, PostgreSQL
 - 🚀 Experiência em desenvolvimento **front-end, back-end e mobile**.
 
 <br>
