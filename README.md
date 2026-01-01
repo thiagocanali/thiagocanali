@@ -43,6 +43,7 @@
 - ✝️ [Conectados em Cristo](https://thiagocanali.github.io/conectados-em-cristo)
 - ⛪ [PIBPB](https://thiagocanali.github.io/pibpb)
 - ◯ [Pokemon Tracker](https://thiagocanali.github.io/pokemon-tracker/)
+- 🐱‍👤 [Naruto Ninja Ranker](https://thiagocanali.github.io/Naruto-Ninja-Ranker/)
 
   
 
