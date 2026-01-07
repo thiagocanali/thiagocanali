@@ -44,6 +44,7 @@
 - ⛪ [PIBPB](https://thiagocanali.github.io/pibpb)
 - ◯ [Pokemon Tracker](https://thiagocanali.github.io/pokemon-tracker/)
 - 🐱‍👤 [Naruto Ninja Ranker](https://thiagocanali.github.io/Naruto-Ninja-Ranker/)
+- 🏎️ [Corrida Infinita](https://thiagocanali.github.io/corrida-infinita/)
 
   
 
