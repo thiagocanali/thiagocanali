@@ -33,9 +33,9 @@
 
 ## ⚡ Projetos em destaque
 
-> Alguns projetos públicos disponíveis no GitHub Pages
+> Confira alguns projetos públicos disponíveis no GitHub Pages
 
-https://thiagocanali.github.io/
+- 💼📂 [PORTFOLIO](https://thiagocanali.github.io/)
 
   
 
