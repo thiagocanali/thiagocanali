@@ -23,7 +23,7 @@
 > Desenvolvedor Full Stack — focado em **Web e Mobile**  
 > Cristão • Amante de tecnologia • Sempre aprendendo
 
-- 🔭 Atualmente atuo como **Desenvolvedor de Software FullStack**
+- 🔭 Desenvolvo Sites e Aplicativos
 - 👨‍💻 Principais stacks: Vue, Angular, Flutter, Node, PostgreSQL
 - 🚀 Experiência em desenvolvimento **front-end, back-end e mobile**.
 
@@ -35,16 +35,7 @@
 
 > Alguns projetos públicos disponíveis no GitHub Pages
 
-- 🗺️ [Mapa NOC 24x7](https://thiagocanali.github.io/my-noc-map)
-- 📊 [Escala NOC 24x7](https://thiagocanali.github.io/my-schedu/)
-- 📶 [Teste de Velocidade](https://thiagocanali.github.io/my-speedtest/)
-- 🌀 [Clean Air BR](https://thiagocanali.github.io/cleanairbr)
-- 🦉 [Anelise Chagas](https://thiagocanali.github.io/anelisechagas)
-- ✝️ [Conectados em Cristo](https://thiagocanali.github.io/conectados-em-cristo)
-- ⛪ [PIBPB](https://thiagocanali.github.io/pibpb)
-- ◯ [Pokemon Tracker](https://thiagocanali.github.io/pokemon-tracker/)
-- 🐱‍👤 [Naruto Ninja Ranker](https://thiagocanali.github.io/Naruto-Ninja-Ranker/)
-- 🏎️ [Corrida Infinita](https://thiagocanali.github.io/corrida-infinita/)
+https://thiagocanali.github.io/
 
   
 
