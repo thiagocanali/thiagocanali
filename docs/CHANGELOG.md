@@ -2,6 +2,17 @@
 
 Mudanças significativas do projeto, em ordem cronológica reversa.
 
+## 2026-11-11 — Fase 2: base executável
+
+- Criado o primeiro scaffold executável em Next.js 16.x.
+- Configurados TypeScript strict, App Router, Tailwind CSS 4.x e ESLint.
+- Preparado shadcn/ui e adicionados Lucide e Geist.
+- Materializados os tokens do Dark Digital Engineering.
+- Criada Home estrutural e páginas públicas iniciais.
+- Adicionada metadata base e página 404.
+- Criado Preview Vercel para a branch `feat/app-foundation`; a verificação ainda está aguardando processamento do build.
+- Lockfile ainda pendente porque o ambiente desta execução não possui acesso funcional ao registry npm para gerar dependências transitivas.
+
 ## 2026-11-11 — Arquitetura e design system aprovados
 
 - Fechada a stack inicial em Next.js 16.x, React, TypeScript strict, Tailwind CSS 4.x, shadcn/ui e Lucide.
