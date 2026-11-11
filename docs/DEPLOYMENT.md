@@ -34,7 +34,7 @@ Quando Supabase for criado:
 
 ### Domínio
 
-`thiagocanali.vercel.app` permanece como domínio planejado até ser verificado no projeto Vercel. Não tratar o domínio como configurado sem evidência.
+`thiagocanali.vercel.app` está **configurado e verificado** no projeto Vercel atual. A implantação de produção ainda não foi promovida para esse domínio.
 
 ### Observabilidade e recuperação
 
@@ -47,4 +47,13 @@ Antes do lançamento:
 
 ## Estado atual
 
-Não há aplicação, package manifest, lockfile ou projeto Vercel configurado ainda. A Fase 2 criará o primeiro deployment preview verificável.
+A Fase 2 possui scaffold executável e um Preview Vercel confirmado como **READY** no commit `6fb8819b6ce0fe21eebb55204d47baa420689ca8`. O domínio `thiagocanali.vercel.app` está associado e verificado no projeto.
+
+Ainda pendentes para fechar a Fase 2:
+- gerar/versionar `package-lock.json`;
+- executar a suíte completa de qualidade em ambiente reprodutível;
+- revisão visual desktop/mobile;
+- revisão final de acessibilidade e SEO;
+- registrar critérios de aceite.
+
+O Preview confirmado não deve ser tratado como produção.
