@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "geist/font";
+import { GeistMono, GeistSans } from "geist/font";
 
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://thiagocanali.vercel.app"),
   title: {
     default: "Thiago Canali — Personal Digital Hub",
     template: "%s — Thiago Canali",
@@ -23,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${Geist.variable} ${Geist_Mono.variable}`}>
+    <html lang="pt-BR" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body>{children}</body>
     </html>
   );
