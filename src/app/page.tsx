@@ -31,7 +31,7 @@ export default function HomePage() {
             href="/"
             className="font-mono text-sm tracking-tight text-text-muted transition-colors hover:text-accent"
           >
-            thiagocanali.dev
+            thiagocanali
           </Link>
           <span className="font-mono text-xs uppercase tracking-[0.22em] text-text-muted">
             digital hub / v0.1
@@ -90,7 +90,10 @@ export default function HomePage() {
         </section>
 
         <footer className="border-t border-border/70 pt-5 font-mono text-xs text-text-muted">
-          <p>Construído em etapas verificáveis. Conteúdo profissional será publicado somente após validação.</p>
+          <p>
+            Construído em etapas verificáveis. Conteúdo profissional será
+            publicado somente após validação.
+          </p>
         </footer>
       </div>
     </main>
