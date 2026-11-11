@@ -1,18 +1,126 @@
 # Arquitetura
 
-## Estado observado no checkout
-Na inspeção inicial, o único arquivo versionado era `README.md` (perfil em Markdown com links e listas de tecnologias). Não há código de aplicação, `src/`, rotas, componentes, package manifest/lockfile, configuração de Vercel, testes ou configuração Supabase. Portanto, não é possível afirmar framework ou runtime existente. Não se alterou funcionalidade de aplicação.
+## Decisões aprovadas — 2026-11-11
 
-## Direção proposta — ainda não aprovada/implementada
-Preferências da visão do produto: Next.js, React, TypeScript, Tailwind CSS, shadcn/ui, Lucide, Supabase e Vercel; Framer Motion e Blob somente se justificadas. São opções futuras, não dependências atuais. Validar versões, compatibilidade, necessidade e custo antes de adotar.
+A arquitetura da aplicação foi fechada para a primeira implementação.
 
-Arquitetura futura deve separar apresentação, lógica de domínio e acesso a dados; manter componentes reutilizáveis; usar tipagem estrita; evitar duplicação e dependências não justificadas. Rotas, organização do código e limites de módulos serão decididos quando a aplicação for criada, sem presumir uma estrutura que ainda não existe.
+### Stack
 
-## Limites de confiança pretendidos
-- Conteúdo público somente publicado e aprovado.
-- Operações administrativas autenticadas e autorizadas no servidor.
-- Acesso ao banco limitado por políticas e por modelo de propriedade.
-- Segredos exclusivamente em configuração de ambiente protegida; nunca em cliente ou Git.
+| Camada | Decisão | Motivo |
+|---|---|---|
+| Framework | Next.js 16.x | App Router, React Server Components, SSR/SSG e integração natural com Vercel |
+| Linguagem | TypeScript strict | Segurança de tipos e manutenção |
+| UI/CSS | Tailwind CSS 4.x | Tokens no CSS, baixo acoplamento e integração atual com Next.js |
+| Componentes | shadcn/ui | Código dos componentes dentro do repositório, acessível e altamente customizável |
+| Ícones | Lucide React | Consistência visual e baixo acoplamento |
+| Animação | CSS primeiro; biblioteca somente quando justificar | Evitar dependência e movimento desnecessários |
+| Conteúdo | Supabase PostgreSQL como fonte dinâmica | Permite publicação/admin sem rebuild para cada conteúdo |
+| Auth | Supabase Auth | Sessões compatíveis com App Router e políticas RLS |
+| SSR Auth | @supabase/ssr | Sessões por cookie no Next.js |
+| Deploy | Vercel | Integração nativa com Next.js e previews por branch/PR |
+| Mídia | Definir na Fase 4; Blob somente se necessário | Evitar infraestrutura antes do modelo de conteúdo |
+| Package manager | npm | Menor atrito para o projeto individual e compatibilidade ampla |
 
-## Decisões pendentes
-Aprovar stack efetiva e arquitetura de conteúdo; decidir CMS próprio/Supabase versus outra solução, estratégia de mídia e autenticação do painel. Não introduzir banco ou dependências até a fase correspondente e inspeção da integração.
+As versões exatas devem ser fixadas no primeiro commit de aplicação e registradas no lockfile. Não usar versões de memória.
+
+### Estrutura de aplicação
+
+A aplicação usará App Router com `src/`:
+
+```
+src/
+├── app/
+│   ├── (site)/
+│   │   ├── page.tsx
+│   │   ├── projects/
+│   │   ├── lab/
+│   │   ├── journal/
+│   │   ├── about/
+│   │   └── contact/
+│   └── admin/
+│       ├── page.tsx
+│       ├── projects/
+│       ├── articles/
+│       ├── experiments/
+│       ├── media/
+│       └── settings/
+├── components/
+│   ├── ui/
+│   ├── site/
+│   └── admin/
+├── lib/
+│   ├── supabase/
+│   ├── content/
+│   ├── validation/
+│   └── utils/
+└── types/
+```
+
+A estrutura é uma direção inicial, não um contrato para criar abstrações prematuras. Novos módulos devem surgir por necessidade real.
+
+### Server-first
+
+- Server Components são o padrão.
+- Client Components somente quando houver interatividade que exija estado/eventos do navegador.
+- Busca de conteúdo público preferencialmente no servidor.
+- Mutação administrativa exclusivamente em fronteira de servidor.
+- Autorização não depende de esconder rotas no cliente.
+
+### Renderização
+
+- Conteúdo estático e páginas que não dependem de sessão devem favorecer prerenderização/cache.
+- Conteúdo dinâmico publicado poderá usar revalidação controlada.
+- Área administrativa e dados dependentes de sessão não devem ser tratados como conteúdo público cacheável.
+- Qualquer estratégia de cache que envolva sessão deve ser revisada para não vazar respostas entre usuários.
+
+### Rotas
+
+Públicas:
+- `/`
+- `/projects`
+- `/projects/[slug]`
+- `/lab`
+- `/lab/[slug]`
+- `/journal`
+- `/journal/[slug]`
+- `/about`
+- `/contact`
+
+Privadas:
+- `/admin`
+- `/admin/projects`
+- `/admin/articles`
+- `/admin/experiments`
+- `/admin/media`
+- `/admin/settings`
+
+A proteção real será implementada no servidor quando o Auth entrar no projeto.
+
+### Conteúdo
+
+O modelo será híbrido no sentido de responsabilidade, mas não de duas fontes concorrentes:
+
+- Git: código, documentação técnica, schema/migrations e configuração.
+- Supabase: conteúdo editorial publicado, rascunhos, status e metadados administráveis.
+
+Não haverá duplicação de conteúdo editorial entre Markdown e banco sem uma razão explícita.
+
+### Dados e segurança
+
+- Supabase será criado especificamente para este projeto quando a Fase 4 começar.
+- RLS será obrigatório para tabelas acessíveis pela aplicação.
+- Conteúdo público só poderá ser retornado quando marcado como publicado.
+- Admin será autorizado por identidade/role no servidor e reforçado por RLS.
+- Service-role/secret keys nunca chegam ao navegador.
+- Uploads terão validação de tipo, tamanho e autorização.
+- Slugs serão únicos.
+- Timestamps serão armazenados em UTC.
+- Validação de entrada ocorrerá no servidor.
+
+## Estado anterior observado
+
+O checkout inicial não tinha aplicação, framework, dependências, rotas ou configuração de deploy. Esta decisão transforma a proposta anterior em arquitetura aprovada; a implementação ainda começa na próxima fase.
+
+## Referências de implementação
+
+A decisão considera a documentação atual de Next.js 16, Tailwind CSS 4, shadcn/ui e Supabase SSR. As versões instaladas serão verificadas no momento do scaffold.

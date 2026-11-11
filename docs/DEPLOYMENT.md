@@ -1,14 +1,50 @@
 # Deploy e ambientes
 
-## Estado observado
-Não existe configuração de aplicação, `package.json`, `vercel.json`, workflow CI ou comando de desenvolvimento/build no checkout. O domínio `thiagocanali.vercel.app` é planejado, não confirmado como configurado. Nenhum deploy foi verificado nesta tarefa.
+## Decisões aprovadas — 2026-11-11
 
-## Fluxo futuro
-1. Escolher e documentar stack/runtime antes de definir comandos.
-2. Desenvolvimento local com `.env.local` não versionado e dependências fixadas no lockfile.
-3. Preview por branch/PR, sem segredos de produção e com dados de teste.
-4. Produção somente após verificações de acessibilidade, testes, segurança, conteúdo e rollback.
-5. Configurar variáveis separadamente por ambiente na plataforma escolhida; nunca incluir valores secretos em Git.
+A plataforma alvo é Vercel com Next.js.
 
-## Operação
-Ao adotar Vercel, verificar integração do projeto, domínio, root directory, build/install commands e variáveis no painel/CLI; documentar os valores não secretos. Definir observabilidade, backups e rollback conforme arquitetura final. Não afirmar comandos executáveis até manifesto e scripts serem adicionados.
+### Ambientes
+
+- Desenvolvimento local: variáveis em `.env.local`, nunca versionadas.
+- Preview: cada branch/PR pode gerar uma implantação isolada.
+- Produção: somente após QA, segurança, conteúdo e rollback revisados.
+
+### Fluxo Git
+
+1. Trabalho em branch de feature/fase.
+2. Commit pequeno e verificável.
+3. Pull request para a branch padrão.
+4. Checks de qualidade.
+5. Preview Vercel.
+6. Revisão funcional/visual.
+7. Merge.
+8. Produção após critérios de aceite.
+
+Não fazer push direto para a branch padrão.
+
+### Variáveis
+
+Ainda não existem variáveis de aplicação. O arquivo `.env.example` deve conter apenas nomes e valores demonstrativos seguros.
+
+Quando Supabase for criado:
+- URL e publishable key poderão existir no cliente conforme a integração oficial;
+- chaves secretas/service-role ficarão exclusivamente no servidor;
+- variáveis serão separadas por ambiente.
+
+### Domínio
+
+`thiagocanali.vercel.app` permanece como domínio planejado até ser verificado no projeto Vercel. Não tratar o domínio como configurado sem evidência.
+
+### Observabilidade e recuperação
+
+Antes do lançamento:
+- verificar logs de aplicação;
+- configurar monitoramento mínimo;
+- definir estratégia de backup/recuperação do conteúdo;
+- testar rollback de deployment;
+- documentar incidentes relevantes.
+
+## Estado atual
+
+Não há aplicação, package manifest, lockfile ou projeto Vercel configurado ainda. A Fase 2 criará o primeiro deployment preview verificável.
