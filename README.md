@@ -1,13 +1,28 @@
 # Thiago Canali — Personal Digital Hub
 
-Plataforma pessoal planejada para reunir identidade profissional, projetos, experimentos técnicos, publicações e contato. O repositório está na fase de fundação documental: ainda não contém aplicação web.
+Plataforma pessoal para reunir identidade profissional, projetos, experimentos técnicos, publicações e contato. O projeto está saindo da fundação documental e entrando na implementação incremental da aplicação.
 
 ## Estado atual
-O checkout inicialmente continha apenas este README de perfil, com links públicos, tecnologias e a presença legada `thiagocanali.github.io`. Não foram encontrados framework, aplicação, rotas, componentes, manifestos de dependências, testes ou configuração de deploy. Nenhuma dependência precisa ser instalada para consultar a documentação.
+
+**Fase 1 concluída — arquitetura e design system aprovados.**
+
+A próxima etapa é criar a base executável em Next.js, mantendo o escopo pequeno e verificável. Ainda não há aplicação web, dependências ou banco configurados neste repositório.
+
+## Decisões principais
+
+- Next.js 16.x + React + TypeScript strict
+- App Router com `src/`
+- Tailwind CSS 4.x
+- shadcn/ui + Lucide
+- Supabase PostgreSQL/Auth em fase posterior
+- Vercel para Preview e produção
+- Dark Digital Engineering como direção visual
+- Conteúdo editorial dinâmico no Supabase, código/documentação no Git
 
 ## Documentação
+
 - [Visão do produto](docs/PROJECT.md)
-- [Arquitetura existente e proposta](docs/ARCHITECTURE.md)
+- [Arquitetura](docs/ARCHITECTURE.md)
 - [Sistema visual](docs/DESIGN_SYSTEM.md)
 - [Roadmap](docs/ROADMAP.md)
 - [Dados](docs/DATABASE.md) e [segurança](docs/SECURITY.md)
@@ -15,20 +30,15 @@ O checkout inicialmente continha apenas este README de perfil, com links públic
 - [Instruções para agentes](AGENTS.md)
 - [Prompts por fase](prompts/)
 
-## Desenvolvimento local
-Ainda não há aplicação ou comandos de execução. Para esta fase, basta navegar pelos arquivos Markdown. Não execute `npm install` ou comandos de framework até a stack e a aplicação serem aprovadas e adicionadas.
-
-## Próxima etapa
-Revisar a fundação, confirmar stack e arquitetura, e então implementar a base da aplicação conforme `docs/ROADMAP.md`. A visão prefere Next.js/React/TypeScript e Supabase quando justificados, mas essas tecnologias não estão instaladas nem configuradas.
-
 ## Perfil público legado
-O README anterior se apresentava como perfil pessoal e descrevia Thiago como desenvolvedor Full Stack com foco em Web e Mobile, amante de tecnologia e sempre aprendendo; citava desenvolvimento front-end, back-end e mobile. O texto também trazia um portfolio legado no GitHub Pages e estes links públicos:
 
+O README anterior continha links públicos, tecnologias e a presença legada `thiagocanali.github.io`. Esses dados foram preservados na documentação inicial, mas não devem ser tratados como validação automática da experiência atual. Conteúdo profissional do novo site precisa ser confirmado antes de publicação.
+
+Links públicos preservados:
 - Portfolio legado: https://thiagocanali.github.io/
 - GitHub: https://github.com/thiagocanali
 - LinkedIn: https://www.linkedin.com/in/thiagocanali
-- Email: [thiagocanali@hotmail.com](mailto:thiagocanali@hotmail.com)
+- Email: thiagocanali@hotmail.com
 - YouTube: https://www.youtube.com/@thiago.canali
-- Sugestões do portfolio legado: https://forms.gle/yvVVwyz8YSM4xRGm9
 
-Tecnologias que o perfil anterior listava: Java, JavaScript, TypeScript, Python, PHP; Vue, Angular, React; Flutter, Ionic; Node.js, Firebase; PostgreSQL, MySQL, MongoDB; Git, Linux e VS Code. O perfil também continha uma citação bíblica (Lucas 5:32). Esses dados são uma transcrição do README legado, não uma validação atual de proficiência, disponibilidade, emprego ou conteúdo do novo produto; confirme antes de promovê-los como fatos atuais.
+Tecnologias listadas historicamente: Java, JavaScript, TypeScript, Python, PHP; Vue, Angular, React; Flutter, Ionic; Node.js, Firebase; PostgreSQL, MySQL, MongoDB; Git, Linux e VS Code.
