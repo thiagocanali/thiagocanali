@@ -18,7 +18,7 @@ Visitante acessa Home → navegação compartilhada → áreas públicas ou Cont
 
 ## Limites e acompanhamento
 
-Não houve envio de email nem validação de contas externas. Não existe formulário. Verificação de acessibilidade é parcial e não substitui auditoria assistiva. CI remoto e novo Preview precisam ser conferidos após publicação da branch.
+Não houve envio de email nem validação de contas externas. Não existe formulário. Verificação de acessibilidade é parcial e não substitui auditoria assistiva. Preview confirmado READY no commit c4cb7dc. CI remoto iniciado no run 43066615449; resultado ainda pendente no momento deste registro.
 
 ESLint 9.39.5 é compatível com os peers dos plugins atuais, porém npm já o marca sem suporte. Acompanhar suporte a ESLint 10 em eslint-plugin-import, eslint-plugin-react e eslint-plugin-jsx-a11y. TypeScript 7 foi substituído por 6.0.3 porque typescript-eslint interrompia execução explicitamente.
 

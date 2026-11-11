@@ -54,3 +54,5 @@ A Fase 2 possui scaffold executável e um Preview Vercel confirmado como **READY
 A API da Vercel confirmou o deployment `dpl_A2KxSTQKyC97QNtFdNd9xZTuB22H`, commit `8fd605fab7007cd1e4e07b6f151fcc83744b1788`, target `production`, estado `READY`. Isso corrige a descrição anterior que tratava todas as implantações como Preview.
 
 Instalação local usa `npm ci` com lockfile versionado, Node.js 24 e checks no workflow `Quality`. Alterações desta revisão devem passar pelo PR e Preview antes de merge. Nenhuma promoção manual foi executada nesta revisão.
+
+Preview desta revisão confirmado como **READY** pela API Vercel no commit `c4cb7dc7996d94fd2f4fa1e2d829e91d92bb5f83`: https://thiagocanali-7c4rp0bwl-thiagocanalis-projects.vercel.app. PR: https://github.com/thiagocanali/thiagocanali/pull/5.

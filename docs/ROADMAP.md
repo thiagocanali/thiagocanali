@@ -44,4 +44,4 @@ A Fase 2 não deve criar Supabase, Auth ou painel administrativo ainda.
 - [ ] Confirmar conteúdo profissional e selecionar projetos reais.
 - [ ] Publicar conteúdo editorial após definir persistência e fluxo editorial.
 
-Validação local: lint, typecheck, build e navegação em Chromium nas larguras 360, 768 e 1440 px. Registro detalhado em `docs/QUALITY.md`. A integração Vercel anterior está READY; o novo Preview deve ser verificado na branch desta entrega.
+Validação local: lint, typecheck, build e navegação em Chromium nas larguras 360, 768 e 1440 px. Registro detalhado em `docs/QUALITY.md`. A integração Vercel anterior está READY; o Preview desta entrega também foi confirmado READY no commit c4cb7dc (ver DEPLOYMENT.md).
