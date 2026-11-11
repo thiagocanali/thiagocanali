@@ -1,6 +1,6 @@
 # Segurança
 
-**Estado:** não há aplicação, autenticação ou banco implementados neste checkout. Este documento especifica requisitos futuros.
+**Estado:** site público estático em Next.js, sem autenticação, banco ou endpoints de mutação. Contato usa links externos e mailto; nenhuma mensagem é armazenada. Os requisitos abaixo aplicam-se à evolução do produto.
 
 ## Requisitos
 - Proteger o Control Center com autenticação real e autorização no servidor em cada operação; não confiar em guards ou estado do cliente.

@@ -1,12 +1,12 @@
 # Thiago Canali — Personal Digital Hub
 
-**Status:** fundação documental; nenhum produto web foi implementado neste checkout.
+**Status:** aplicação Next.js executável, com shell público validado e conteúdo editorial ainda pendente.
 
 ## Visão e propósito
 Construir uma plataforma digital pessoal de longo prazo que funcione como centro profissional de Thiago Canali: identidade, trabalho, experimentos, conhecimento e contato. Deve ir além de um portfólio convencional e apresentar credibilidade, competência técnica e atenção a detalhes.
 
 - Nome oficial: Thiago Canali
-- Domínio principal planejado: `thiagocanali.vercel.app` (não verificado/configurado neste repositório)
+- Domínio principal planejado: `thiagocanali.vercel.app` (associado e verificado conforme registro de deploy)
 - Presença legada: `thiagocanali.github.io`
 
 ## Objetivos
@@ -31,4 +31,4 @@ Recrutadores, lideranças de engenharia e tecnologia, potenciais clientes, desen
 Não inventar experiência, clientes, credenciais, formação, resultados, métricas ou depoimentos. Conteúdo não confirmado deve ser marcado como placeholder e não publicado como fato.
 
 ## Estado confirmado
-O checkout inspecionado contém somente `README.md` versionado; ele é um perfil Markdown com tecnologias e links públicos. Não foram encontrados aplicação, rotas, componentes, manifestos de dependências, configuração de deploy, banco ou testes. As funcionalidades acima são metas, não funcionalidades existentes. Veja `ARCHITECTURE.md` e `ROADMAP.md`.
+O repositório contém Next.js, seis páginas públicas, navegação compartilhada, página 404, contato por links, lockfile e workflow de qualidade. Projetos, Lab e Journal ainda não têm conteúdo publicado. Não existem banco, autenticação ou painel administrativo. Veja `ARCHITECTURE.md` e `ROADMAP.md`.

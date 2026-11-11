@@ -24,21 +24,9 @@ const areas = [
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen">
-      <div className="mx-auto flex min-h-screen w-full max-w-6xl flex-col px-6 py-8 sm:px-8 lg:px-10">
-        <header className="flex items-center justify-between border-b border-border/70 pb-6">
-          <Link
-            href="/"
-            className="font-mono text-sm tracking-tight text-text-muted transition-colors hover:text-accent"
-          >
-            thiagocanali
-          </Link>
-          <span className="font-mono text-xs uppercase tracking-[0.22em] text-text-muted">
-            digital hub / v0.1
-          </span>
-        </header>
-
-        <section className="flex flex-1 flex-col justify-center py-20 lg:py-28">
+    <main id="main-content" tabIndex={-1}>
+      <div className="mx-auto flex w-full max-w-6xl flex-col px-6 py-8 sm:px-8 lg:px-10">
+        <section className="flex flex-col justify-center py-20 lg:py-28">
           <div className="max-w-4xl">
             <p className="mb-5 font-mono text-sm text-accent">
               {"// personal digital hub"}
@@ -47,9 +35,8 @@ export default function HomePage() {
               Engenharia, projetos e ideias em construção.
             </h1>
             <p className="mt-7 max-w-2xl text-base leading-8 text-text-muted sm:text-lg">
-              Este é o ponto de partida da nova plataforma pessoal. A aplicação
-              será construída de forma incremental, com conteúdo factual,
-              documentação e experimentação técnica no centro.
+              Um espaço para reunir projetos, explorar ideias e compartilhar
+              conhecimento técnico. Conheça as áreas do hub ou entre em contato.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-3">
@@ -89,12 +76,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        <footer className="border-t border-border/70 pt-5 font-mono text-xs text-text-muted">
-          <p>
-            Construído em etapas verificáveis. Conteúdo profissional será
-            publicado somente após validação.
-          </p>
-        </footer>
       </div>
     </main>
   );
