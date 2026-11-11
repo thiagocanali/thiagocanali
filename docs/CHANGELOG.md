@@ -2,6 +2,16 @@
 
 Mudanças significativas do projeto, em ordem cronológica reversa.
 
+## 2026-11-11 — Qualidade da base e experiência pública
+
+- Lidos todos os prompts; evolução incremental conforme autorização do proprietário.
+- Gerado lockfile e corrigida incompatibilidade de TypeScript 7 com typescript-eslint usando TypeScript 6.0.3. ESLint 9.39.5 mantém compatibilidade dos plugins atuais; fim de suporte registrado para acompanhamento.
+- Adicionado CI com instalação limpa, lint, tipos e build.
+- Implementada navegação compartilhada, página ativa, skip link e rodapé.
+- Contato funcional por links públicos existentes; estados vazios voltados ao visitante.
+- Documentação sincronizada com aplicação e deployment real.
+- Verificações e limitações registradas em QUALITY.md.
+
 ## 2026-11-11 — Fase 2: base executável
 
 - Criado o primeiro scaffold executável em Next.js 16.x.

@@ -132,4 +132,4 @@ Os estados de loading, empty, error, success e disabled fazem parte do design e 
 
 ## Implementação
 
-Os tokens serão materializados no `globals.css` durante a Fase 2. Esta documentação permanece como fonte de verdade visual.
+Os tokens estão materializados no `src/app/globals.css`. Esta documentação permanece como fonte de verdade visual.

@@ -4,7 +4,7 @@ Plataforma pessoal para reunir identidade profissional, projetos, experimentos t
 
 ## Estado atual
 
-**Fase 2 em andamento — base executável criada.**
+**Base executável validada; Fase 3 em andamento.**
 
 A aplicação agora possui um scaffold Next.js com TypeScript, Tailwind CSS, shadcn/ui preparado, Lucide, Geist e páginas públicas estruturais. O banco, autenticação, conteúdo dinâmico e Control Center ainda não foram implementados.
 
@@ -29,7 +29,11 @@ npm run lint
 npm run typecheck
 ```
 
-O lockfile ainda precisa ser gerado pelo ambiente de desenvolvimento/CI antes de considerar a fundação totalmente reproduzível.
+Use Node.js 24 LTS e `npm ci` para instalar as versões do `package-lock.json`.
+
+A navegação é compartilhada entre todas as páginas, com indicação de página atual e acesso por teclado. Contato oferece email, LinkedIn e GitHub; não há formulário nem coleta de mensagens. Projetos, Lab e Journal exibem estados vazios honestos.
+
+O workflow `Quality` executa instalação limpa, lint, tipos e build em pull requests e na branch principal. TypeScript 6.0.3 e ESLint 9.39.5 foram escolhidos por compatibilidade com o parser e plugins do Next.js 16.4.6. O npm sinaliza fim de suporte do ESLint 9; acompanhar atualização dos plugins antes de migrar para ESLint 10.
 
 ## Documentação
 

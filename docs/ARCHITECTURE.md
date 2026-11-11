@@ -119,7 +119,7 @@ Não haverá duplicação de conteúdo editorial entre Markdown e banco sem uma 
 
 ## Estado anterior observado
 
-O checkout inicial não tinha aplicação, framework, dependências, rotas ou configuração de deploy. Esta decisão transforma a proposta anterior em arquitetura aprovada; a implementação ainda começa na próxima fase.
+O checkout inicial não tinha aplicação, framework, dependências, rotas ou configuração de deploy. Esta decisão transforma a proposta anterior em arquitetura aprovada; a aplicação Next.js já está implementada com rotas públicas estáticas. Persistência e administração continuam planejadas.
 
 ## Referências de implementação
 

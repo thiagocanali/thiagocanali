@@ -3,7 +3,7 @@
 Ideias não comprometidas; requerem priorização e validação. Não são funcionalidades aprovadas ou implementadas.
 
 - Confirmar biografia, trajetória, currículo, competências e links atuais com o proprietário.
-- Decidir stack, CMS/conteúdo e estratégia de mídia.
+- Definir estratégia de mídia; stack e fonte de conteúdo já aprovadas.
 - Definir fluxo editorial e papéis administrativos.
 - Avaliar busca, filtros e taxonomias para projetos e artigos.
 - Avaliar analytics com privacidade e métricas mínimas.
