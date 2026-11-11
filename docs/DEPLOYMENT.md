@@ -64,3 +64,5 @@ A criação de `thiagocanali-hub` foi recusada pelo Supabase por limite de proje
 Depois de liberar capacidade: provisionar projeto dedicado na organização confirmada pelo proprietário, aplicar a migration, testar RLS e Data API e executar advisors. Só então cadastrar `SUPABASE_URL` e `SUPABASE_PUBLISHABLE_KEY` nos ambientes apropriados, com valores de Preview separados de produção. Usar publishable key; a aplicação recusa secret/service-role. Revisar/reimplantar Preview e validar antes de promover.
 
 Não copiar fixtures locais para o projeto hospedado. O projeto local é descartável e a criação hospedada não aconteceu.
+
+Preview editorial confirmado **READY** no commit `3895290f821d1bd2ebce17390b86cf2d02d480b0`: https://thiagocanali-h6jr81g23-thiagocanalis-projects.vercel.app. Acesso autorizado a `/projects` retornou HTTP 200 com estado vazio e sem fixtures. CI Quality aprovado no run 43122663180. PR #6 depende da base do PR #5; não houve merge ou promoção para produção nesta revisão.

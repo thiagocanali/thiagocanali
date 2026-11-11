@@ -38,3 +38,7 @@ História: visitante abre Projetos/Lab/Journal → Server Component → SDK Supa
 - Audit de dependências de produção não reportou vulnerabilidades nesta revisão.
 
 Limites: o gateway HTTPS local apenas encaminha a consulta para PostgREST sob anon e usa uma publishable key ilustrativa. Não testa o gateway/Auth gerenciado do Supabase. Projeto hospedado não criado devido ao limite da conta; advisors, tipos gerados e Data API hospedada ainda precisam ser validados. O leitor não oferece escrita nem autenticação administrativa. Teste de tela não equivale a auditoria completa de acessibilidade.
+
+### Evidência remota do incremento
+
+CI Quality no commit `3895290` concluído com sucesso: https://github.com/thiagocanali/thiagocanali/actions/runs/43122663180. Inclui npm ci, lint, tipos, testes de consultas, build e testes de banco. Preview Vercel READY; `/projects` retornou 200 com estado vazio, sem mensagem de falha e sem conteúdo TEST ONLY. Isso valida o deploy sem configuração hospedada; não equivale a Data API Supabase ativa.
