@@ -1,23 +1,35 @@
 # Thiago Canali — Personal Digital Hub
 
-Plataforma pessoal para reunir identidade profissional, projetos, experimentos técnicos, publicações e contato. O projeto está saindo da fundação documental e entrando na implementação incremental da aplicação.
+Plataforma pessoal para reunir identidade profissional, projetos, experimentos técnicos, publicações e contato.
 
 ## Estado atual
 
-**Fase 1 concluída — arquitetura e design system aprovados.**
+**Fase 2 em andamento — base executável criada.**
 
-A próxima etapa é criar a base executável em Next.js, mantendo o escopo pequeno e verificável. Ainda não há aplicação web, dependências ou banco configurados neste repositório.
+A aplicação agora possui um scaffold Next.js com TypeScript, Tailwind CSS, shadcn/ui preparado, Lucide, Geist e páginas públicas estruturais. O banco, autenticação, conteúdo dinâmico e Control Center ainda não foram implementados.
 
-## Decisões principais
+## Stack
 
-- Next.js 16.x + React + TypeScript strict
+- Next.js 16.x + React
+- TypeScript strict
 - App Router com `src/`
 - Tailwind CSS 4.x
 - shadcn/ui + Lucide
+- Geist Sans + Geist Mono
 - Supabase PostgreSQL/Auth em fase posterior
 - Vercel para Preview e produção
-- Dark Digital Engineering como direção visual
-- Conteúdo editorial dinâmico no Supabase, código/documentação no Git
+
+## Scripts
+
+```text
+npm run dev
+npm run build
+npm run start
+npm run lint
+npm run typecheck
+```
+
+O lockfile ainda precisa ser gerado pelo ambiente de desenvolvimento/CI antes de considerar a fundação totalmente reproduzível.
 
 ## Documentação
 
