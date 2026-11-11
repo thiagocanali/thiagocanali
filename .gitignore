@@ -1,0 +1,10 @@
+# Environment files (keep the committed template)
+.env
+.env.*
+!.env.example
+
+# Dependencies and generated output
+node_modules/
+.next/
+out/
+dist/
