@@ -2,6 +2,16 @@
 
 Mudanças significativas do projeto, em ordem cronológica reversa.
 
+## 2026-11-11 — Persistência editorial preparada
+
+- Adicionado schema content_entries com RLS, ACLs, constraints, índice parcial e trigger SECURITY INVOKER.
+- Implementadas leitura pública server-only, listagens e detalhes por slug para Projetos, Lab e Journal.
+- Estados separados para ausência de conteúdo e indisponibilidade; consultas com timeout, no-store e validação de URLs.
+- Corpo exibido como texto puro e omitido das consultas de listagem.
+- Testes de consultas e banco descartável adicionados ao CI; navegação completa testada com PostgreSQL/PostgREST locais.
+- Provisionamento Supabase autorizado na organização do proprietário, mas bloqueado pelo limite de projetos gratuitos; nenhum projeto existente alterado.
+- Node mínimo atualizado para 22 por exigência do SDK. Evidências e limites em QUALITY.md.
+
 ## 2026-11-11 — Qualidade da base e experiência pública
 
 - Lidos todos os prompts; evolução incremental conforme autorização do proprietário.

@@ -1,0 +1,35 @@
+# Generated with Supabase CLI 3.1.0, reduced to the services used in this phase.
+project_id = "thiagocanali"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 100
+# Explicit grants in migrations are the only source of API table access.
+auto_expose_new_tables = false
+
+[db]
+port = 54322
+shadow_port = 54320
+major_version = 17
+
+[db.migrations]
+enabled = true
+schema_paths = []
+
+[db.seed]
+enabled = false
+
+[auth]
+enabled = false
+
+[storage]
+enabled = false
+
+[realtime]
+enabled = false
+
+[analytics]
+enabled = false

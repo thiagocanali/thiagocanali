@@ -119,8 +119,14 @@ Não haverá duplicação de conteúdo editorial entre Markdown e banco sem uma 
 
 ## Estado anterior observado
 
-O checkout inicial não tinha aplicação, framework, dependências, rotas ou configuração de deploy. Esta decisão transforma a proposta anterior em arquitetura aprovada; a aplicação Next.js já está implementada com rotas públicas estáticas. Persistência e administração continuam planejadas.
+O checkout inicial não tinha aplicação, framework, dependências, rotas ou configuração de deploy. Esta decisão transforma a proposta anterior em arquitetura aprovada; a aplicação Next.js já está implementada com rotas públicas estáticas. Schema e leitura editorial foram implementados/testados localmente; ativação hospedada e administração continuam pendentes.
 
 ## Referências de implementação
 
 A decisão considera a documentação atual de Next.js 16, Tailwind CSS 4, shadcn/ui e Supabase SSR. As versões instaladas serão verificadas no momento do scaffold.
+
+## Incremento editorial — 2026-11-11
+
+As três coleções usam `content_entries` com discriminador kind e políticas comuns (detalhes em DATABASE.md). Rotas de listagem e detalhe são Server Components dinâmicos. Não há cache público entre requisições: publicação, agendamento e retirada de conteúdo são reavaliados a cada leitura. React.cache deduplica somente no contexto da requisição. Somente as listagens leem resumos; detalhes leem o corpo.
+
+SDK Supabase 2.119.0 e server-only 0.0.1 adicionados para consulta pública no servidor. `@supabase/ssr` não é necessário enquanto não houver sessões. Runtime mínimo passa a Node.js 22; desenvolvimento/CI em Node.js 24. Nenhuma chave administrativa é usada na aplicação.

@@ -25,7 +25,7 @@ Não fazer push direto para a branch padrão.
 
 ### Variáveis
 
-Ainda não existem variáveis de aplicação. O arquivo `.env.example` deve conter apenas nomes e valores demonstrativos seguros.
+O leitor editorial usa `SUPABASE_URL` e `SUPABASE_PUBLISHABLE_KEY`, ambas no servidor. `.env.example` contém somente placeholders. Não configurar valores ilustrativos na Vercel.
 
 Quando Supabase for criado:
 - URL e publishable key poderão existir no cliente conforme a integração oficial;
@@ -56,3 +56,11 @@ A API da Vercel confirmou o deployment `dpl_A2KxSTQKyC97QNtFdNd9xZTuB22H`, commi
 Instalação local usa `npm ci` com lockfile versionado, Node.js 24 e checks no workflow `Quality`. Alterações desta revisão devem passar pelo PR e Preview antes de merge. Nenhuma promoção manual foi executada nesta revisão.
 
 Preview desta revisão confirmado como **READY** pela API Vercel no commit `c4cb7dc7996d94fd2f4fa1e2d829e91d92bb5f83`: https://thiagocanali-7c4rp0bwl-thiagocanalis-projects.vercel.app. PR: https://github.com/thiagocanali/thiagocanali/pull/5.
+
+## Ativação editorial pendente
+
+A criação de `thiagocanali-hub` foi recusada pelo Supabase por limite de projetos gratuitos ativos. Não houve alteração nos bancos existentes nem configuração de credenciais na Vercel. Sem as duas variáveis, Preview continua operável com estados vazios.
+
+Depois de liberar capacidade: provisionar projeto dedicado na organização confirmada pelo proprietário, aplicar a migration, testar RLS e Data API e executar advisors. Só então cadastrar `SUPABASE_URL` e `SUPABASE_PUBLISHABLE_KEY` nos ambientes apropriados, com valores de Preview separados de produção. Usar publishable key; a aplicação recusa secret/service-role. Revisar/reimplantar Preview e validar antes de promover.
+
+Não copiar fixtures locais para o projeto hospedado. O projeto local é descartável e a criação hospedada não aconteceu.
