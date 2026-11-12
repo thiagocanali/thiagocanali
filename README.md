@@ -1,3 +1,45 @@
+# Olá, eu sou o Thiago Canali 👋
+
+Construo aplicações web e aprendo colocando ideias em prática.
+
+Meu GitHub reúne projetos próprios, experimentos e minha trajetória de estudos. Hoje estou evoluindo produtos para educação, organização pessoal e presença digital, usando IA como apoio ao desenvolvimento.
+
+[LinkedIn](https://www.linkedin.com/in/thiagocanali) · [Contato por e-mail](mailto:thiagocanali@hotmail.com)
+
+## Projetos em construção
+
+### [Me Aprovaê](https://github.com/thiagocanali/MeAprovae)
+Plataforma de estudos para concursos públicos, com questões, revisão e acompanhamento de desempenho.
+
+**Tecnologias:** Nuxt, Vue, TypeScript e PostgreSQL.  
+**Etapa:** núcleo de estudos em validação; conteúdo e fluxos continuam em revisão.
+
+### [taskDesk](https://github.com/thiagocanali/taskDesk)
+Organização pessoal de tarefas, com prioridades, histórico e acesso por usuário.
+
+**Tecnologias:** Vue, TypeScript, Node.js, Express e Prisma.  
+**Etapa:** CRUD e autenticação implementados; ativação hospedada e integrações de e-mail pendentes.
+
+### [AcolheMente](https://github.com/thiagocanali/AcolheMente)
+Projeto para aproximar pessoas e profissionais de Psicologia, começando pela apresentação profissional e solicitação de agendamento.
+
+**Tecnologias:** Vue, TypeScript e Vite.  
+**Etapa:** página institucional implementada; fluxo administrativo em preparação.
+
+## O que estou desenvolvendo
+
+- Interfaces com Vue, Nuxt, React e Next.js.
+- APIs, persistência e autenticação para aplicações web.
+- Um processo de desenvolvimento com documentação, testes e revisão de mudanças.
+- Meu [site pessoal](https://github.com/thiagocanali/thiagocanali), também em construção.
+
+Os repositórios de cursos e exercícios registram meu aprendizado ao longo do tempo. Os projetos acima são uma seleção inicial dos trabalhos que estou evoluindo agora.
+
+---
+
+<details>
+<summary>Documentação técnica deste repositório — Personal Digital Hub</summary>
+
 # Thiago Canali — Personal Digital Hub
 
 Plataforma pessoal para reunir identidade profissional, projetos, experimentos técnicos, publicações e contato.
@@ -73,3 +115,5 @@ Leia [DATABASE.md](docs/DATABASE.md) antes de configurar a persistência. `SUPAB
 Canonical e compartilhamento usam o domínio público verificado. Indexação só é habilitada em VERCEL_ENV=production; Preview/desenvolvimento ficam noindex e sem URLs no sitemap. A imagem de compartilhamento é gerada em `/opengraph-image` e o ícone em `/icon.svg`.
 
 `npm run test:http` exige um build feito com `VERCEL_ENV=production` e verifica o servidor real numa porta temporária. Não conecta ao Supabase. Os detalhes de segurança, ambientes e limites estão em SECURITY.md, DEPLOYMENT.md e QUALITY.md.
+
+</details>

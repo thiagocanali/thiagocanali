@@ -72,3 +72,9 @@ A base editorial foi entregue no PR #6, com origem no PR #5 (CI run 43066751242 
 - [ ] Monitoramento e auditoria completa de acessibilidade; CSP de scripts/estilos conforme evolução.
 
 O PR #6 foi integrado na branch feat/public-experience-quality, não em main. Esta revisão inclui essa integração no PR direto para main; a persistência hospedada continua bloqueada por capacidade Supabase.
+
+## Perfil GitHub — curadoria inicial
+
+O README apresenta o perfil pessoal e uma seleção inicial de Me Aprovaê, taskDesk e AcolheMente, com base na documentação pública dos projetos. A documentação técnica do hub permanece em uma seção recolhível. Esta curadoria não publica conteúdo no banco do site nem encerra a confirmação editorial da Fase 3.
+
+Próxima revisão: avaliar os destaques fixados do perfil e padronizar descrições dos projetos escolhidos. Arquivamento, renomeação e alteração de visibilidade de repositórios precisam de avaliação específica.
