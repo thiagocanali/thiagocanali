@@ -1,7 +1,6 @@
-export const metadata = {
-  title: "Contato",
-  description: "Canais de contato profissional.",
-};
+import { pageMetadata } from "@/lib/site";
+
+export const metadata = pageMetadata("/contact", "Contato", "Canais de contato profissional.");
 
 export default function ContactPage() {
   return (

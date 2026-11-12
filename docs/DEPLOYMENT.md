@@ -25,7 +25,7 @@ Não fazer push direto para a branch padrão.
 
 ### Variáveis
 
-Ainda não existem variáveis de aplicação. O arquivo `.env.example` deve conter apenas nomes e valores demonstrativos seguros.
+O leitor editorial usa `SUPABASE_URL` e `SUPABASE_PUBLISHABLE_KEY`, ambas no servidor. `.env.example` contém somente placeholders. Não configurar valores ilustrativos na Vercel.
 
 Quando Supabase for criado:
 - URL e publishable key poderão existir no cliente conforme a integração oficial;
@@ -56,3 +56,34 @@ A API da Vercel confirmou o deployment `dpl_A2KxSTQKyC97QNtFdNd9xZTuB22H`, commi
 Instalação local usa `npm ci` com lockfile versionado, Node.js 24 e checks no workflow `Quality`. Alterações desta revisão devem passar pelo PR e Preview antes de merge. Nenhuma promoção manual foi executada nesta revisão.
 
 Preview desta revisão confirmado como **READY** pela API Vercel no commit `c4cb7dc7996d94fd2f4fa1e2d829e91d92bb5f83`: https://thiagocanali-7c4rp0bwl-thiagocanalis-projects.vercel.app. PR: https://github.com/thiagocanali/thiagocanali/pull/5.
+
+## Ativação editorial pendente
+
+A criação de `thiagocanali-hub` foi recusada pelo Supabase por limite de projetos gratuitos ativos. Não houve alteração nos bancos existentes nem configuração de credenciais na Vercel. Sem as duas variáveis, Preview continua operável com estados vazios.
+
+Depois de liberar capacidade: provisionar projeto dedicado na organização confirmada pelo proprietário, aplicar a migration, testar RLS e Data API e executar advisors. Só então cadastrar `SUPABASE_URL` e `SUPABASE_PUBLISHABLE_KEY` nos ambientes apropriados, com valores de Preview separados de produção. Usar publishable key; a aplicação recusa secret/service-role. Revisar/reimplantar Preview e validar antes de promover.
+
+Não copiar fixtures locais para o projeto hospedado. O projeto local é descartável e a criação hospedada não aconteceu.
+
+Preview editorial confirmado **READY** no commit `3895290f821d1bd2ebce17390b86cf2d02d480b0`: https://thiagocanali-h6jr81g23-thiagocanalis-projects.vercel.app. Acesso autorizado a `/projects` retornou HTTP 200 com estado vazio e sem fixtures. CI Quality aprovado no run 43122663180. PR #6 depende da base do PR #5; não houve merge ou promoção para produção nesta revisão.
+
+## SEO por ambiente
+
+A URL canônica é centralizada em `src/lib/site.ts`, no domínio verificado https://thiagocanali.vercel.app. Não é derivada de Host ou URL de Preview. Ao mudar o domínio público, atualizar essa constante e revisar metadata, sitemap e testes HTTP.
+
+Somente VERCEL_ENV=production habilita indexação. Previews/desenvolvimento recebem robots Disallow: /, sitemap vazio, meta noindex/nofollow e X-Robots-Tag. O sitemap de produção lista as seis áreas públicas; detalhes editoriais são descobertos pelos links das listagens, sem enumerar rascunhos/slugs privados. Não há lastModified inventado.
+
+Para validar localmente o comportamento de produção (sem deploy):
+
+```sh
+VERCEL_ENV=production npm run build
+npm run test:http
+```
+
+O script sobe e encerra seu próprio next start em uma porta disponível, sem credenciais Supabase. CI usa o mesmo modo para validar metadados, headers, 404, sitemap, robots e PNG. O build da Vercel continua usando o ambiente real do deployment; o CI não promove nem publica produção.
+
+### Preview e CI do preparo público
+
+Commit de código `4fe1667802176210359a2b29d43e20aaac4cc7b5`: Preview Vercel READY em https://thiagocanali-1l8dmahix-thiagocanalis-projects.vercel.app. Verificação autorizada confirmou `/projects` HTTP 200 com canonical de produção e meta/header noindex; robots Disallow: / e sitemap vazio. Headers CSP, X-Frame-Options e Permissions-Policy confirmados no deployment.
+
+CI Quality concluído com sucesso no run 43205848912, incluindo smoke HTTP e testes PostgreSQL. PR #7 aponta diretamente para main e inclui a integração editorial do #6. Nenhuma promoção manual ou mudança de infraestrutura foi executada nesta revisão.

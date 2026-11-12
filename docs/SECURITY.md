@@ -1,6 +1,6 @@
 # Segurança
 
-**Estado:** site público estático em Next.js, sem autenticação, banco ou endpoints de mutação. Contato usa links externos e mailto; nenhuma mensagem é armazenada. Os requisitos abaixo aplicam-se à evolução do produto.
+**Estado:** páginas editoriais renderizadas no servidor com leitor público Supabase; schema/RLS testados localmente, sem banco hospedado provisionado, autenticação ou endpoints de mutação. Contato usa links externos e mailto; nenhuma mensagem é armazenada. Os requisitos abaixo aplicam-se à evolução do produto.
 
 ## Requisitos
 - Proteger o Control Center com autenticação real e autorização no servidor em cada operação; não confiar em guards ou estado do cliente.
@@ -15,3 +15,22 @@
 
 ## Incidentes e privacidade
 Coletar o mínimo de dados pessoais, definir retenção e mecanismo de remoção. Formulário público exige validação, limitação de taxa e proteção contra spam. Documentar procedimento de resposta a incidentes antes do lançamento. Requisitos legais e política de privacidade seguem pendentes de análise.
+
+## Leitura editorial
+
+- Somente publishable key é aceita pelo leitor server-only. Chaves sb_secret_ e legadas service-role não são aceitas.
+- Sem cookies nem sessão do visitante na consulta pública; nenhuma mutação do site.
+- ACL e RLS bloqueiam escrita de anon/authenticated; RLS esconde conteúdo não publicado mesmo com SELECT.
+- URLs passam por validação HTTPS e rejeição de credenciais antes de renderizar links; body é texto escapado pelo React.
+- Timeout de 5 s e no-store; erros do provedor não aparecem na interface nem são registrados com dados sensíveis.
+- Projeto remoto ainda não provisionado por limite da conta. Advisors e verificação hospedada ficam pendentes de capacidade.
+
+## Cabeçalhos HTTP — 2026-11-12
+
+`next.config.ts` aplica X-Content-Type-Options: nosniff, Referrer-Policy: strict-origin-when-cross-origin, X-Frame-Options: DENY e Permissions-Policy bloqueando câmera, microfone e geolocalização.
+
+A CSP atual contém somente `frame-ancestors 'none'; base-uri 'self'; object-src 'none'`: bloqueia enquadramento, base externa e objetos incorporados. Ainda não restringe origens de scripts/estilos e não deve ser descrita como proteção completa contra XSS. Body editorial continua escapado pelo React. Revisar nonce/CSP completa quando os requisitos de scripts e integrações estiverem definidos.
+
+Fora de VERCEL_ENV=production, X-Robots-Tag: noindex, nofollow é adicionado. Robots/metadados seguem a mesma regra. Isso evita indexação acidental, mas não constitui controle de acesso. Conteúdo privado continua dependendo de autorização/RLS.
+
+O boundary de erro mostra texto fixo e retry; não renderiza error.message, stack ou digest. Ele protege erros de rotas filhas; erros no root layout precisam do mecanismo padrão do Next.js e continuam fora desse boundary.

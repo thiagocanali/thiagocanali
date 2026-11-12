@@ -7,14 +7,19 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test:db": "bash scripts/test-content-db.sh",
+    "test": "node --conditions=react-server --import tsx --test tests/*.test.ts",
+    "test:http": "node scripts/test-site-http.mjs"
   },
   "dependencies": {
+    "@supabase/supabase-js": "2.119.0",
     "geist": "1.9.2",
     "lucide-react": "1.72.0",
     "next": "16.4.6",
     "react": "19.3.1",
     "react-dom": "19.3.1",
+    "server-only": "0.0.1",
     "tailwind-merge": "3.7.0"
   },
   "devDependencies": {
@@ -25,9 +30,10 @@
     "eslint": "9.39.5",
     "eslint-config-next": "16.4.6",
     "tailwindcss": "4.3.5",
+    "tsx": "4.23.15",
     "typescript": "6.0.3"
   },
   "engines": {
-    "node": ">=20.9.0"
+    "node": ">=22.0.0"
   }
 }

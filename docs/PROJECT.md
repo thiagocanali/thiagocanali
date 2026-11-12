@@ -32,3 +32,7 @@ Não inventar experiência, clientes, credenciais, formação, resultados, métr
 
 ## Estado confirmado
 O repositório contém Next.js, seis páginas públicas, navegação compartilhada, página 404, contato por links, lockfile e workflow de qualidade. Projetos, Lab e Journal ainda não têm conteúdo publicado. Não existem banco, autenticação ou painel administrativo. Veja `ARCHITECTURE.md` e `ROADMAP.md`.
+
+## Preparação de lançamento — 2026-11-12
+
+A base inclui SEO por ambiente, compartilhamento social, ícone, cabeçalhos HTTP, carregamento nas listagens e recuperação de erro. Isso não encerra o lançamento: conteúdo profissional confirmado, persistência hospedada, autorização administrativa e verificações finais continuam pendentes.
