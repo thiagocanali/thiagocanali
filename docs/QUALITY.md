@@ -58,3 +58,7 @@ O sitemap inclui áreas públicas estáveis, não o inventário editorial comple
 - URLs ausentes das três coleções e rota desconhecida retornaram 404 no navegador após o ajuste de Suspense.
 - Imagem PNG inspecionada visualmente; dimensão 1200 × 630 confirmada pelo teste HTTP.
 - Componentes de erro/carregamento testados em harness local isolado: retry acionou callback, mensagem/digest privados não foram renderizados e estado aria-busy/status estava presente. O harness não simula uma falha real do App Router; esse fluxo completo ainda precisa de teste dedicado.
+
+### Evidência remota do preparo público
+
+CI aprovado para `4fe1667`: https://github.com/thiagocanali/thiagocanali/actions/runs/43205848912. Preview READY e respostas reais de `/projects`, `/robots.txt` e `/sitemap.xml` confirmaram a política de Preview: canonical de produção, noindex/nofollow, bloqueio de robôs e sitemap sem URLs. Headers de segurança foram confirmados no deployment. A produção ainda depende da integração do PR #7.

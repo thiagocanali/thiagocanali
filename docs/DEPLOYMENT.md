@@ -81,3 +81,9 @@ npm run test:http
 ```
 
 O script sobe e encerra seu próprio next start em uma porta disponível, sem credenciais Supabase. CI usa o mesmo modo para validar metadados, headers, 404, sitemap, robots e PNG. O build da Vercel continua usando o ambiente real do deployment; o CI não promove nem publica produção.
+
+### Preview e CI do preparo público
+
+Commit de código `4fe1667802176210359a2b29d43e20aaac4cc7b5`: Preview Vercel READY em https://thiagocanali-1l8dmahix-thiagocanalis-projects.vercel.app. Verificação autorizada confirmou `/projects` HTTP 200 com canonical de produção e meta/header noindex; robots Disallow: / e sitemap vazio. Headers CSP, X-Frame-Options e Permissions-Policy confirmados no deployment.
+
+CI Quality concluído com sucesso no run 43205848912, incluindo smoke HTTP e testes PostgreSQL. PR #7 aponta diretamente para main e inclui a integração editorial do #6. Nenhuma promoção manual ou mudança de infraestrutura foi executada nesta revisão.

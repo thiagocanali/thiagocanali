@@ -58,7 +58,7 @@ Validação local: lint, typecheck, build e navegação em Chromium nas larguras
 - [ ] Configurar URL/publishable key por ambiente e validar Preview com Data API hospedada.
 - [ ] Implementar autorização administrativa explícita antes de qualquer CRUD pelo site.
 
-Esta branch depende da base do PR #5, cujo CI terminou com sucesso (run 43066751242). Conteúdo factual continua pendente e não foi substituído por fixtures públicos.
+A base editorial foi entregue no PR #6, com origem no PR #5 (CI run 43066751242 aprovado). O PR #7 reúne essa entrega para main. Conteúdo factual continua pendente e não foi substituído por fixtures públicos.
 
 ## Fase 6 — preparo público
 
