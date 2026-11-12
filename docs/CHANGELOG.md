@@ -2,6 +2,13 @@
 
 Mudanças significativas do projeto, em ordem cronológica reversa.
 
+## 2026-11-12 — Apresentação do perfil GitHub
+
+- README passa a abrir com apresentação de Thiago Canali, canais públicos e seleção de projetos em construção.
+- Me Aprovaê, taskDesk e AcolheMente apresentados com tecnologias e limites descritos nos respectivos READMEs.
+- Documentação técnica anterior preservada integralmente em seção recolhível, com os mesmos caminhos relativos.
+- Curadoria do perfil não conclui as fases de conteúdo editorial ou persistência do site.
+
 ## 2026-11-12 — SEO, segurança HTTP e estados de interface
 
 - Adicionados canonical, Open Graph e Twitter Card consistentes nas páginas públicas e detalhes publicados.
