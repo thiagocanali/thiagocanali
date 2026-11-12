@@ -20,4 +20,7 @@ jobs:
       - run: npm run typecheck
       - run: npm test
       - run: npm run build
+        env:
+          VERCEL_ENV: production
+      - run: npm run test:http
       - run: npm run test:db

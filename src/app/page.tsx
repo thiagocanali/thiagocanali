@@ -1,5 +1,11 @@
+import { pageMetadata, site } from "@/lib/site";
 import Link from "next/link";
 import { ArrowUpRight, Code2, FlaskConical, Terminal } from "lucide-react";
+
+export const metadata = {
+  ...pageMetadata("/", site.title, site.description),
+  title: { absolute: site.title },
+};
 
 const areas = [
   {

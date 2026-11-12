@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test:db": "bash scripts/test-content-db.sh",
-    "test": "node --conditions=react-server --import tsx --test tests/*.test.ts"
+    "test": "node --conditions=react-server --import tsx --test tests/*.test.ts",
+    "test:http": "node scripts/test-site-http.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "2.119.0",

@@ -4,13 +4,14 @@ import type { Metadata } from "next";
 import { getContent } from "@/lib/content/queries";
 import { contentSections, type ContentKind } from "@/lib/content/types";
 import { ContentState } from "./content-state";
+import { pageMetadata } from "@/lib/site";
 
 export async function contentMetadata(kind: ContentKind, slug: string): Promise<Metadata> {
   const result = await getContent(kind, slug);
   if (result.status !== "ready" || !result.data) {
     return { title: "Conteúdo indisponível", robots: { index: false, follow: false } };
   }
-  return { title: result.data.title, description: result.data.summary };
+  return pageMetadata(`${contentSections[kind].path}/${result.data.slug}`, result.data.title, result.data.summary);
 }
 
 export async function ContentDetail({ kind, slug }: { kind: ContentKind; slug: string }) {

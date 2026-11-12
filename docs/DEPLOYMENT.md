@@ -66,3 +66,18 @@ Depois de liberar capacidade: provisionar projeto dedicado na organização conf
 Não copiar fixtures locais para o projeto hospedado. O projeto local é descartável e a criação hospedada não aconteceu.
 
 Preview editorial confirmado **READY** no commit `3895290f821d1bd2ebce17390b86cf2d02d480b0`: https://thiagocanali-h6jr81g23-thiagocanalis-projects.vercel.app. Acesso autorizado a `/projects` retornou HTTP 200 com estado vazio e sem fixtures. CI Quality aprovado no run 43122663180. PR #6 depende da base do PR #5; não houve merge ou promoção para produção nesta revisão.
+
+## SEO por ambiente
+
+A URL canônica é centralizada em `src/lib/site.ts`, no domínio verificado https://thiagocanali.vercel.app. Não é derivada de Host ou URL de Preview. Ao mudar o domínio público, atualizar essa constante e revisar metadata, sitemap e testes HTTP.
+
+Somente VERCEL_ENV=production habilita indexação. Previews/desenvolvimento recebem robots Disallow: /, sitemap vazio, meta noindex/nofollow e X-Robots-Tag. O sitemap de produção lista as seis áreas públicas; detalhes editoriais são descobertos pelos links das listagens, sem enumerar rascunhos/slugs privados. Não há lastModified inventado.
+
+Para validar localmente o comportamento de produção (sem deploy):
+
+```sh
+VERCEL_ENV=production npm run build
+npm run test:http
+```
+
+O script sobe e encerra seu próprio next start em uma porta disponível, sem credenciais Supabase. CI usa o mesmo modo para validar metadados, headers, 404, sitemap, robots e PNG. O build da Vercel continua usando o ambiente real do deployment; o CI não promove nem publica produção.

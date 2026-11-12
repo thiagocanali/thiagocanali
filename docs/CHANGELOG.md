@@ -2,6 +2,17 @@
 
 Mudanças significativas do projeto, em ordem cronológica reversa.
 
+## 2026-11-12 — SEO, segurança HTTP e estados de interface
+
+- Adicionados canonical, Open Graph e Twitter Card consistentes nas páginas públicas e detalhes publicados.
+- Criados ícone e imagem de compartilhamento PNG de 1200 × 630.
+- Adicionados robots.txt e sitemap das seis áreas; indexação permitida apenas quando VERCEL_ENV=production.
+- Cabeçalhos de segurança aplicados globalmente, com noindex adicional fora de produção.
+- Indicador de carregamento restrito às listagens para manter HTTP 404 de detalhes inexistentes.
+- Boundary de erro inesperado com retry, navegação e mensagem sem dados internos.
+- Testes de política e smoke HTTP do build adicionados ao CI; documentação de operação atualizada.
+- Reunida a integração editorial do PR #6 com a base atual de main.
+
 ## 2026-11-11 — Persistência editorial preparada
 
 - Adicionado schema content_entries com RLS, ACLs, constraints, índice parcial e trigger SECURITY INVOKER.

@@ -24,3 +24,13 @@ Coletar o mínimo de dados pessoais, definir retenção e mecanismo de remoção
 - URLs passam por validação HTTPS e rejeição de credenciais antes de renderizar links; body é texto escapado pelo React.
 - Timeout de 5 s e no-store; erros do provedor não aparecem na interface nem são registrados com dados sensíveis.
 - Projeto remoto ainda não provisionado por limite da conta. Advisors e verificação hospedada ficam pendentes de capacidade.
+
+## Cabeçalhos HTTP — 2026-11-12
+
+`next.config.ts` aplica X-Content-Type-Options: nosniff, Referrer-Policy: strict-origin-when-cross-origin, X-Frame-Options: DENY e Permissions-Policy bloqueando câmera, microfone e geolocalização.
+
+A CSP atual contém somente `frame-ancestors 'none'; base-uri 'self'; object-src 'none'`: bloqueia enquadramento, base externa e objetos incorporados. Ainda não restringe origens de scripts/estilos e não deve ser descrita como proteção completa contra XSS. Body editorial continua escapado pelo React. Revisar nonce/CSP completa quando os requisitos de scripts e integrações estiverem definidos.
+
+Fora de VERCEL_ENV=production, X-Robots-Tag: noindex, nofollow é adicionado. Robots/metadados seguem a mesma regra. Isso evita indexação acidental, mas não constitui controle de acesso. Conteúdo privado continua dependendo de autorização/RLS.
+
+O boundary de erro mostra texto fixo e retry; não renderiza error.message, stack ou digest. Ele protege erros de rotas filhas; erros no root layout precisam do mecanismo padrão do Next.js e continuam fora desse boundary.

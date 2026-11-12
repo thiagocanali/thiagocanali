@@ -42,3 +42,19 @@ Limites: o gateway HTTPS local apenas encaminha a consulta para PostgREST sob an
 ### Evidência remota do incremento
 
 CI Quality no commit `3895290` concluído com sucesso: https://github.com/thiagocanali/thiagocanali/actions/runs/43122663180. Inclui npm ci, lint, tipos, testes de consultas, build e testes de banco. Preview Vercel READY; `/projects` retornou 200 com estado vazio, sem mensagem de falha e sem conteúdo TEST ONLY. Isso valida o deploy sem configuração hospedada; não equivale a Data API Supabase ativa.
+
+## Preparação pública — 2026-11-12
+
+- 11 testes de consultas/política SEO aprovados, incluindo negação de indexação fora de production e coerência de canonical/compartilhamento.
+- Lint, tipos e build com VERCEL_ENV=production aprovados.
+- Novo `npm run test:http` aprovado contra next start real: seis páginas 200, canonical/OG/Twitter, headers e ausência de X-Powered-By; quatro URLs inexistentes 404; robots, sitemap de seis URLs e PNG 1200 × 630.
+- O teste HTTP foi incluído no CI após build em modo de ambiente production. Não faz deploy nem usa banco hospedado.
+- Foi detectado e corrigido um 200 indevido de detalhes inexistentes causado por loading.tsx no nível pai. O carregamento agora fica em Suspense somente nas listagens; o teste HTTP impede essa regressão.
+- A imagem compartilhada precisou ser explicitada nos metadados por página para não desaparecer quando o Open Graph herdado era substituído; a presença real de og:image agora é verificada por HTTP.
+
+O sitemap inclui áreas públicas estáveis, não o inventário editorial completo. Restrição de robôs não autentica usuários. A CSP atual não restringe origens de scripts/estilos. Persistência hospedada segue bloqueada pelo limite Supabase; nenhuma infraestrutura remota ou dado foi alterado nesta revisão.
+
+- Playwright/Chromium validou as seis páginas em 360, 768 e 1440 px: metadados completos, headers, um main/h1, foco pelo skip link e nenhum overflow ou pageerror.
+- URLs ausentes das três coleções e rota desconhecida retornaram 404 no navegador após o ajuste de Suspense.
+- Imagem PNG inspecionada visualmente; dimensão 1200 × 630 confirmada pelo teste HTTP.
+- Componentes de erro/carregamento testados em harness local isolado: retry acionou callback, mensagem/digest privados não foram renderizados e estado aria-busy/status estava presente. O harness não simula uma falha real do App Router; esse fluxo completo ainda precisa de teste dedicado.

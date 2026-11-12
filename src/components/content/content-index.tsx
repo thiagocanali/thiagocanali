@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+import { ContentLoading } from "./content-loading";
 import Link from "next/link";
 import { listContent } from "@/lib/content/queries";
 import { contentSections, type ContentKind } from "@/lib/content/types";
@@ -5,11 +7,22 @@ import { ContentState } from "./content-state";
 
 export async function ContentIndex({ kind }: { kind: ContentKind }) {
   const section = contentSections[kind];
-  const result = await listContent(kind);
   return (
     <main id="main-content" tabIndex={-1} className="mx-auto max-w-6xl px-6 py-16 sm:px-8 lg:px-10">
       <p className="font-mono text-sm text-accent">{section.path}</p>
       <h1 className="mt-4 text-4xl font-semibold tracking-tight">{section.title}</h1>
+      <Suspense fallback={<ContentLoading />}>
+        <ContentCollection kind={kind} />
+      </Suspense>
+    </main>
+  );
+}
+
+async function ContentCollection({ kind }: { kind: ContentKind }) {
+  const section = contentSections[kind];
+  const result = await listContent(kind);
+  return (
+    <>
       {result.status !== "ready" || result.data.length === 0 ? (
         <ContentState empty={section.empty} unavailable={result.status === "unavailable"} />
       ) : (
@@ -25,6 +38,6 @@ export async function ContentIndex({ kind }: { kind: ContentKind }) {
           ))}
         </ul>
       )}
-    </main>
+    </>
   );
 }

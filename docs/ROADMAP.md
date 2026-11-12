@@ -1,6 +1,6 @@
 # Roadmap
 
-Status em 2026-11-11. Fases incrementais.
+Status em 2026-11-12. Fases incrementais.
 
 | Fase | Prioridade | Dependências | Estado |
 |---|---|---|---|
@@ -10,7 +10,7 @@ Status em 2026-11-11. Fases incrementais.
 | 3. Conteúdo público: Home, About, projetos, Lab, Journal e contato | P1 | Fase 2; conteúdo factual confirmado | **Em andamento** |
 | 4. Persistência e publicação de conteúdo | P2 | Modelo de dados e integração aprovada | **Em andamento; hospedagem bloqueada** |
 | 5. Autenticação e Control Center | P2 | Fase 4; estratégia de auth e políticas revisadas | Planejada |
-| 6. Qualidade, segurança, SEO e lançamento | P1 contínua | Fases anteriores | Planejada |
+| 6. Qualidade, segurança, SEO e lançamento | P1 contínua | Fases anteriores | **Em andamento** |
 
 ## Fase 2 — estado
 
@@ -59,3 +59,16 @@ Validação local: lint, typecheck, build e navegação em Chromium nas larguras
 - [ ] Implementar autorização administrativa explícita antes de qualquer CRUD pelo site.
 
 Esta branch depende da base do PR #5, cujo CI terminou com sucesso (run 43066751242). Conteúdo factual continua pendente e não foi substituído por fixtures públicos.
+
+## Fase 6 — preparo público
+
+- [x] Metadados canônicos por página com domínio de produção verificado.
+- [x] Open Graph, Twitter Card, imagem de compartilhamento e ícone.
+- [x] Robots e sitemap das seis áreas públicas; Previews/desenvolvimento sem indexação.
+- [x] Cabeçalhos HTTP para framing, MIME, referrer e permissões de dispositivos.
+- [x] Carregamento nas listagens e recuperação de erros inesperados.
+- [x] Teste HTTP do build no CI para metadados reais e preservação de 404.
+- [ ] Confirmar conteúdo factual, ativar persistência hospedada e validar fluxo administrativo antes do lançamento completo.
+- [ ] Monitoramento e auditoria completa de acessibilidade; CSP de scripts/estilos conforme evolução.
+
+O PR #6 foi integrado na branch feat/public-experience-quality, não em main. Esta revisão inclui essa integração no PR direto para main; a persistência hospedada continua bloqueada por capacidade Supabase.

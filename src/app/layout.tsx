@@ -4,18 +4,21 @@ import { GeistMono } from "geist/font/mono";
 
 import { SiteHeader } from "@/components/site/site-header";
 import { SiteFooter } from "@/components/site/site-footer";
+import { canIndex, site } from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
+  description: site.description,
+  openGraph: { type: "website", locale: "pt_BR", siteName: site.title, title: site.title, description: site.description, images: ["/opengraph-image"] },
+  twitter: { card: "summary_large_image", title: site.title, description: site.description, images: ["/opengraph-image"] },
   title: {
-    default: "Thiago Canali — Personal Digital Hub",
+    default: site.title,
     template: "%s — Thiago Canali",
   },
-  description:
-    "Hub digital pessoal para projetos, experimentos técnicos, publicações e contato.",
   robots: {
-    index: true,
-    follow: true,
+    index: canIndex(),
+    follow: canIndex(),
   },
 };
 

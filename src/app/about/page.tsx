@@ -1,7 +1,6 @@
-export const metadata = {
-  title: "Sobre",
-  description: "Sobre Thiago Canali e o propósito deste hub digital.",
-};
+import { pageMetadata } from "@/lib/site";
+
+export const metadata = pageMetadata("/about", "Sobre", "Sobre Thiago Canali e o propósito deste hub digital.");
 
 export default function AboutPage() {
   return (
