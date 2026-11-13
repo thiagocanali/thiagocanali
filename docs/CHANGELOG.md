@@ -1,11 +1,18 @@
 # Changelog
 
+## 2026-11-13 — Projetos selecionados na Home
+
+- Home apresenta três repositórios públicos já documentados no README, com tecnologia e estado de evolução explícitos.
+- Links externos acessíveis direcionam ao código-fonte, sem depender de Supabase hospedado.
+- O conteúdo editorial persistido permanece independente e não foi simulado.
+
+
 ## 2026-11-13 — Apresentação profissional pública
 
 - Página Sobre ampliada com introdução profissional baseada em informações já documentadas, sem métricas ou experiências inventadas.
 - Adicionadas áreas de interesse, links de navegação interna e canais profissionais públicos.
 - Mantida a distinção entre projetos em evolução e produtos finalizados; não há publicação editorial fictícia.
-- Verificação automatizada e Preview desta alteração dependem dos checks da pull request.
+- CI Quality e status Vercel da PR #10 aprovados; PR #10 integrada à main no commit 0988ffa.
 
 Mudanças significativas do projeto, em ordem cronológica reversa.
 
