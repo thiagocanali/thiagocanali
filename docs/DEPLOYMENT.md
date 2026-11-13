@@ -1,14 +1,21 @@
 # Deploy e ambientes
 
-## Estado observado
-Não existe configuração de aplicação, `package.json`, `vercel.json`, workflow CI ou comando de desenvolvimento/build no checkout. O domínio `thiagocanali.vercel.app` é planejado, não confirmado como configurado. Nenhum deploy foi verificado nesta tarefa.
+## Estado atual
 
-## Fluxo futuro
-1. Escolher e documentar stack/runtime antes de definir comandos.
-2. Desenvolvimento local com `.env.local` não versionado e dependências fixadas no lockfile.
-3. Preview por branch/PR, sem segredos de produção e com dados de teste.
-4. Produção somente após verificações de acessibilidade, testes, segurança, conteúdo e rollback.
-5. Configurar variáveis separadamente por ambiente na plataforma escolhida; nunca incluir valores secretos em Git.
+Aplicação Next.js pronta para execução local e preview. O domínio `thiagocanali.vercel.app` é planejado, não foi verificado nem configurado nesta alteração. Nenhum deploy de produção foi feito.
 
-## Operação
-Ao adotar Vercel, verificar integração do projeto, domínio, root directory, build/install commands e variáveis no painel/CLI; documentar os valores não secretos. Definir observabilidade, backups e rollback conforme arquitetura final. Não afirmar comandos executáveis até manifesto e scripts serem adicionados.
+## Desenvolvimento
+
+- Requer Node.js 20.9+ e npm.
+- Instalar dependências a partir do `package-lock.json` e iniciar com `npm run dev`.
+- Verificações: `npm run lint`, `npm run typecheck` e `npm run build`.
+- `.env*` locais são ignorados pelo Git; `.env.example` é somente um template sem segredo.
+
+## Fluxo recomendado
+
+1. Usar Preview Deploys de branch/PR para revisão, sem segredos de produção.
+2. Executar lint, typecheck, build e checagem de rotas/acessibilidade antes de produção.
+3. Configurar variáveis separadamente por ambiente na plataforma; nunca incluí-las no Git.
+4. Verificar domínio, root directory, comandos de build/instalação, cabeçalhos e rollback antes de anunciar lançamento.
+
+A aplicação ainda é estática e não requer serviços de banco, autenticação ou storage. Não afirmar disponibilidade pública até que um deploy seja efetivamente configurado e verificado.

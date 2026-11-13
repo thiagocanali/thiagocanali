@@ -1,34 +1,33 @@
 # Thiago Canali — Personal Digital Hub
 
-**Status:** fundação documental; nenhum produto web foi implementado neste checkout.
+**Estado:** primeira versão visual do site público implementada; conteúdo pessoal e áreas de publicação aguardam revisão.
 
 ## Visão e propósito
-Construir uma plataforma digital pessoal de longo prazo que funcione como centro profissional de Thiago Canali: identidade, trabalho, experimentos, conhecimento e contato. Deve ir além de um portfólio convencional e apresentar credibilidade, competência técnica e atenção a detalhes.
 
-- Nome oficial: Thiago Canali
-- Domínio principal planejado: `thiagocanali.vercel.app` (não verificado/configurado neste repositório)
+Construir uma plataforma digital pessoal de longo prazo que reúna identidade profissional, trabalho, experimentos, conhecimento e contato. A experiência deve transmitir credibilidade e cuidado sem inventar fatos ou apresentar conteúdo não aprovado.
+
+- Nome do projeto: Thiago Canali — Personal Digital Hub
+- Domínio planejado: `thiagocanali.vercel.app` (não verificado/configurado)
 - Presença legada: `thiagocanali.github.io`
 
-## Objetivos
-- Apresentar posicionamento profissional e trabalhos de forma clara.
-- Organizar projetos, laboratório técnico e publicações.
-- Facilitar contato profissional e, em fase futura, gestão privada do conteúdo.
-- Evoluir gradualmente, com decisões verificáveis, segurança e documentação sincronizada.
-
 ## Público-alvo
-Recrutadores, lideranças de engenharia e tecnologia, potenciais clientes, desenvolvedores e empresas que buscam talento de engenharia.
 
-## Áreas do produto (planejadas)
-1. Home e conteúdo em destaque.
-2. Catálogo de projetos com tecnologias, imagens, repositório, demo e estado.
-3. Lab para protótipos e experimentos.
-4. Journal para artigos e notas técnicas.
-5. About: perfil, experiência, competências, educação e currículo.
-6. Contact: links profissionais e formulário funcional.
-7. Control Center privado para gestão de conteúdo, mídia, destaques, rascunhos e publicação.
+Recrutadores, lideranças de engenharia e tecnologia, potenciais clientes, desenvolvedores e empresas interessadas em trabalho de engenharia.
+
+## Áreas planejadas e estado
+
+1. Home: apresentação do hub e acesso às áreas — interface implementada.
+2. Projetos: catálogo e contexto — rota pronta, conteúdo pendente de curadoria.
+3. Lab: protótipos e experimentos — rota pronta, conteúdo pendente.
+4. Journal: artigos e notas — rota pronta, conteúdo pendente.
+5. About: perfil, experiência, competências, educação e currículo — página identifica os dados como pendentes de confirmação.
+6. Contact: canais públicos — e-mail e LinkedIn legados disponíveis; formulário funcional pendente.
+7. Control Center: gestão privada de conteúdo, mídia, rascunhos e publicação — não implementado.
 
 ## Integridade de conteúdo
-Não inventar experiência, clientes, credenciais, formação, resultados, métricas ou depoimentos. Conteúdo não confirmado deve ser marcado como placeholder e não publicado como fato.
 
-## Estado confirmado
-O checkout inspecionado contém somente `README.md` versionado; ele é um perfil Markdown com tecnologias e links públicos. Não foram encontrados aplicação, rotas, componentes, manifestos de dependências, configuração de deploy, banco ou testes. As funcionalidades acima são metas, não funcionalidades existentes. Veja `ARCHITECTURE.md` e `ROADMAP.md`.
+Não inventar experiência, clientes, credenciais, formação, resultados, métricas ou depoimentos. Dados do README legado são referências não verificadas como atuais. Manter estados vazios até que o conteúdo seja confirmado e aprovado.
+
+## Estado técnico
+
+Next.js App Router, React, TypeScript, Tailwind CSS 4, npm. A aplicação atual não usa banco, autenticação ou API de dados. Ver `ARCHITECTURE.md` e `ROADMAP.md` para limites e próximas fases.

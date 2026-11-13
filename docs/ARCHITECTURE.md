@@ -1,18 +1,26 @@
 # Arquitetura
 
-## Estado observado no checkout
-Na inspeção inicial, o único arquivo versionado era `README.md` (perfil em Markdown com links e listas de tecnologias). Não há código de aplicação, `src/`, rotas, componentes, package manifest/lockfile, configuração de Vercel, testes ou configuração Supabase. Portanto, não é possível afirmar framework ou runtime existente. Não se alterou funcionalidade de aplicação.
+## Estado implementado
 
-## Direção proposta — ainda não aprovada/implementada
-Preferências da visão do produto: Next.js, React, TypeScript, Tailwind CSS, shadcn/ui, Lucide, Supabase e Vercel; Framer Motion e Blob somente se justificadas. São opções futuras, não dependências atuais. Validar versões, compatibilidade, necessidade e custo antes de adotar.
+O projeto agora usa Next.js App Router, React, TypeScript, Tailwind CSS 4 e npm. A interface pública está em `src/app/`, componentes compartilhados em `src/components/` e links de perfil em `src/lib/site.ts`.
 
-Arquitetura futura deve separar apresentação, lógica de domínio e acesso a dados; manter componentes reutilizáveis; usar tipagem estrita; evitar duplicação e dependências não justificadas. Rotas, organização do código e limites de módulos serão decididos quando a aplicação for criada, sem presumir uma estrutura que ainda não existe.
+Rotas estáticas: `/`, `/projects`, `/lab`, `/journal`, `/about` e `/contact`. As páginas de projetos, Lab e Journal mostram estados vazios honestos; About identifica os dados biográficos como pendentes de revisão. Contact usa links externos e `mailto`; não há formulário nem processamento de mensagens.
 
-## Limites de confiança pretendidos
-- Conteúdo público somente publicado e aprovado.
-- Operações administrativas autenticadas e autorizadas no servidor.
-- Acesso ao banco limitado por políticas e por modelo de propriedade.
-- Segredos exclusivamente em configuração de ambiente protegida; nunca em cliente ou Git.
+## Limites atuais
 
-## Decisões pendentes
-Aprovar stack efetiva e arquitetura de conteúdo; decidir CMS próprio/Supabase versus outra solução, estratégia de mídia e autenticação do painel. Não introduzir banco ou dependências até a fase correspondente e inspeção da integração.
+A camada é somente de apresentação e conteúdo estático. Não existe banco de dados, CMS, autenticação, painel privado, upload, integração de e-mail ou API própria. Não adicionar uma camada cliente simulada para substituir esses recursos; implementar persistência quando a fase correspondente for aprovada e a integração disponível for verificada.
+
+## Direção de arquitetura
+
+- App Router e páginas de servidor por padrão; adicionar componentes cliente apenas quando interação real exigir.
+- Manter o conteúdo público e componentes de apresentação separados dos futuros serviços de dados.
+- Usar validação no servidor e autorização em toda operação administrativa futura.
+- Evitar dependências sem necessidade demonstrável.
+- Preservar tipagem estrita e semântica HTML acessível.
+
+## Decisões
+
+- Stack pública inicial: Next.js, React, TypeScript, Tailwind CSS e npm.
+- Estilos globais em `src/app/globals.css`, com tokens semânticos e breakpoints mobile-first.
+- Supabase/Neon, autenticação, CMS, mídia e e-mail ficam fora da implementação atual; decidir quando os requisitos dessas fases forem iniciados.
+- Domínio principal planejado: `thiagocanali.vercel.app`; não verificado ou configurado por esta implementação.

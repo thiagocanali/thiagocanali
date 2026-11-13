@@ -1,13 +1,38 @@
 # Thiago Canali — Personal Digital Hub
 
-Plataforma pessoal planejada para reunir identidade profissional, projetos, experimentos técnicos, publicações e contato. O repositório está na fase de fundação documental: ainda não contém aplicação web.
+Um hub pessoal para reunir projetos, experimentos, notas e contato. O site público está implementado em Next.js; conteúdo biográfico e projetos ainda aguardam revisão factual antes de serem publicados.
 
-## Estado atual
-O checkout inicialmente continha apenas este README de perfil, com links públicos, tecnologias e a presença legada `thiagocanali.github.io`. Não foram encontrados framework, aplicação, rotas, componentes, manifestos de dependências, testes ou configuração de deploy. Nenhuma dependência precisa ser instalada para consultar a documentação.
+## Stack e desenvolvimento
+
+- Next.js App Router, React e TypeScript
+- Tailwind CSS 4 e CSS global para tokens e componentes visuais
+- Aplicação sem banco ou autenticação nesta fase
+- Node.js 20.9+ e npm
+
+```bash
+npm install
+npm run dev
+```
+
+Validações: `npm run lint`, `npm run typecheck` e `npm run build`.
+
+## Rotas públicas
+
+| Rota | Conteúdo |
+|---|---|
+| `/` | Apresentação do hub e navegação para suas áreas |
+| `/projects` | Catálogo de projetos; aguarda curadoria factual |
+| `/lab` | Área para experimentos futuros |
+| `/journal` | Área para notas e artigos futuros |
+| `/about` | Apresentação; dados biográficos aguardam revisão |
+| `/contact` | Links de e-mail e LinkedIn do perfil legado; sem formulário |
+
+A interface deixa explícito quando uma área está em preparação. Experiência, clientes, formação, resultados e projetos não são inventados. O Control Center, a persistência de conteúdo, uploads e autenticação ainda não foram implementados.
 
 ## Documentação
+
 - [Visão do produto](docs/PROJECT.md)
-- [Arquitetura existente e proposta](docs/ARCHITECTURE.md)
+- [Arquitetura](docs/ARCHITECTURE.md)
 - [Sistema visual](docs/DESIGN_SYSTEM.md)
 - [Roadmap](docs/ROADMAP.md)
 - [Dados](docs/DATABASE.md) e [segurança](docs/SECURITY.md)
@@ -15,14 +40,9 @@ O checkout inicialmente continha apenas este README de perfil, com links públic
 - [Instruções para agentes](AGENTS.md)
 - [Prompts por fase](prompts/)
 
-## Desenvolvimento local
-Ainda não há aplicação ou comandos de execução. Para esta fase, basta navegar pelos arquivos Markdown. Não execute `npm install` ou comandos de framework até a stack e a aplicação serem aprovadas e adicionadas.
-
-## Próxima etapa
-Revisar a fundação, confirmar stack e arquitetura, e então implementar a base da aplicação conforme `docs/ROADMAP.md`. A visão prefere Next.js/React/TypeScript e Supabase quando justificados, mas essas tecnologias não estão instaladas nem configuradas.
-
 ## Perfil público legado
-O README anterior se apresentava como perfil pessoal e descrevia Thiago como desenvolvedor Full Stack com foco em Web e Mobile, amante de tecnologia e sempre aprendendo; citava desenvolvimento front-end, back-end e mobile. O texto também trazia um portfolio legado no GitHub Pages e estes links públicos:
+
+O README original se apresentava como perfil pessoal e descrevia Thiago como desenvolvedor Full Stack com foco em Web e Mobile, amante de tecnologia e sempre aprendendo; citava desenvolvimento front-end, back-end e mobile. Esses dados foram preservados como referência, mas não são uma validação atual de proficiência ou experiência.
 
 - Portfolio legado: https://thiagocanali.github.io/
 - GitHub: https://github.com/thiagocanali
@@ -31,4 +51,4 @@ O README anterior se apresentava como perfil pessoal e descrevia Thiago como des
 - YouTube: https://www.youtube.com/@thiago.canali
 - Sugestões do portfolio legado: https://forms.gle/yvVVwyz8YSM4xRGm9
 
-Tecnologias que o perfil anterior listava: Java, JavaScript, TypeScript, Python, PHP; Vue, Angular, React; Flutter, Ionic; Node.js, Firebase; PostgreSQL, MySQL, MongoDB; Git, Linux e VS Code. O perfil também continha uma citação bíblica (Lucas 5:32). Esses dados são uma transcrição do README legado, não uma validação atual de proficiência, disponibilidade, emprego ou conteúdo do novo produto; confirme antes de promovê-los como fatos atuais.
+Tecnologias listadas no perfil anterior: Java, JavaScript, TypeScript, Python, PHP; Vue, Angular, React; Flutter, Ionic; Node.js, Firebase; PostgreSQL, MySQL, MongoDB; Git, Linux e VS Code. Confirme as informações antes de promovê-las como atuais.
