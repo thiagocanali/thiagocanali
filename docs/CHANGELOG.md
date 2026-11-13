@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-13 — Apresentação profissional pública
+
+- Página Sobre ampliada com introdução profissional baseada em informações já documentadas, sem métricas ou experiências inventadas.
+- Adicionadas áreas de interesse, links de navegação interna e canais profissionais públicos.
+- Mantida a distinção entre projetos em evolução e produtos finalizados; não há publicação editorial fictícia.
+- Verificação automatizada e Preview desta alteração dependem dos checks da pull request.
+
 Mudanças significativas do projeto, em ordem cronológica reversa.
 
 ## 2026-11-12 — Apresentação do perfil GitHub
