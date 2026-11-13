@@ -28,6 +28,27 @@ const areas = [
   },
 ];
 
+const featuredProjects = [
+  {
+    title: "Me Aprovaê",
+    description: "Plataforma de estudos para concursos públicos; núcleo de estudos em validação.",
+    stack: "Nuxt · Vue · TypeScript · PostgreSQL",
+    href: "https://github.com/thiagocanali/MeAprovae",
+  },
+  {
+    title: "taskDesk",
+    description: "Organização de tarefas; ativação hospedada e integrações ainda pendentes.",
+    stack: "Vue · TypeScript · Node.js · Prisma",
+    href: "https://github.com/thiagocanali/taskDesk",
+  },
+  {
+    title: "AcolheMente",
+    description: "Projeto para presença profissional em Psicologia; administração em preparação.",
+    stack: "Vue · TypeScript · Vite",
+    href: "https://github.com/thiagocanali/AcolheMente",
+  },
+] as const;
+
 export default function HomePage() {
   return (
     <main id="main-content" tabIndex={-1}>
@@ -81,7 +102,36 @@ export default function HomePage() {
             ))}
           </div>
         </section>
-
+        <section aria-labelledby="featured-projects-heading" className="border-t border-border/70 py-12">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p className="font-mono text-sm text-accent">/selected-work</p>
+              <h2 id="featured-projects-heading" className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
+                Projetos em construção
+              </h2>
+              <p className="mt-3 max-w-2xl leading-7 text-text-muted">
+                Uma seleção de repositórios públicos. O estágio de cada trabalho é indicado
+                para não confundir desenvolvimento ativo com produto concluído.
+              </p>
+            </div>
+            <Link href="/projects" className="inline-flex min-h-11 items-center gap-2 text-sm text-accent underline underline-offset-4">
+              Ver área de projetos <ArrowUpRight aria-hidden="true" className="size-4" />
+            </Link>
+          </div>
+          <ul className="mt-8 grid gap-4 md:grid-cols-3">
+            {featuredProjects.map((project) => (
+              <li key={project.href} className="flex flex-col rounded-lg border border-border bg-surface p-6">
+                <h3 className="text-xl font-medium">{project.title}</h3>
+                <p className="mt-3 flex-1 text-sm leading-6 text-text-muted">{project.description}</p>
+                <p className="mt-5 font-mono text-xs leading-5 text-text-muted">{project.stack}</p>
+                <a href={project.href} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex min-h-11 items-center gap-2 text-sm text-accent underline underline-offset-4">
+                  Ver repositório <ArrowUpRight aria-hidden="true" className="size-4" />
+                  <span className="sr-only">de {project.title} (abre em nova aba)</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
       </div>
     </main>
   );
