@@ -1,6 +1,6 @@
 # Roadmap
 
-Status em 2026-11-12. Fases incrementais.
+Status em 2026-11-13. Fases incrementais.
 
 | Fase | Prioridade | Dependências | Estado |
 |---|---|---|---|
@@ -41,7 +41,7 @@ A Fase 2 não deve criar Supabase, Auth ou painel administrativo ainda.
 
 - [x] Navegação global responsiva e estados vazios acessíveis.
 - [x] Contato pelos canais já documentados.
-- [ ] Confirmar conteúdo profissional e selecionar projetos reais.
+- [x] Publicar apresentação profissional introdutória e seleção inicial de três repositórios públicos na Home, com estados explicitados.\n- [ ] Revisar biografia e projetos em profundidade com evidências e mídia, sem dados inventados.
 - [ ] Publicar conteúdo editorial após definir persistência e fluxo editorial.
 
 Validação local: lint, typecheck, build e navegação em Chromium nas larguras 360, 768 e 1440 px. Registro detalhado em `docs/QUALITY.md`. A integração Vercel anterior está READY; o Preview desta entrega também foi confirmado READY no commit c4cb7dc (ver DEPLOYMENT.md).
