@@ -62,3 +62,11 @@ O sitemap inclui áreas públicas estáveis, não o inventário editorial comple
 ### Evidência remota do preparo público
 
 CI aprovado para `4fe1667`: https://github.com/thiagocanali/thiagocanali/actions/runs/43205848912. Preview READY e respostas reais de `/projects`, `/robots.txt` e `/sitemap.xml` confirmaram a política de Preview: canonical de produção, noindex/nofollow, bloqueio de robôs e sitemap sem URLs. Headers de segurança foram confirmados no deployment. A produção ainda depende da integração do PR #7.
+
+
+## Continuidade — 2026-11-13
+
+- PR #10: falha inicial de TypeScript por imports de ícones de marca indisponíveis em lucide-react; substituídos por ArrowUpRight.
+- Commit 5616596: workflow Quality run 43447530303 concluído com sucesso e status Vercel success; PR #10 integrada no commit 0988ffa.
+- O log da execução anterior mostrou 7 avisos de vulnerabilidade moderada no audit geral de dependências; severidade, pacotes afetados e impacto em produção ainda exigem relatório `npm audit --json` específico. Não executar `npm audit fix` sem revisão das mudanças.
+- Próxima PR: Home com projetos selecionados. Validação da PR e Preview ainda necessária.
