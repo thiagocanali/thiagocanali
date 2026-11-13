@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Github, Linkedin } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { pageMetadata } from "@/lib/site";
 
 export const metadata = pageMetadata(
@@ -72,10 +72,10 @@ export default function AboutPage() {
         <h2 id="links-heading" className="text-xl font-semibold">Outros canais</h2>
         <div className="mt-4 flex flex-wrap gap-5">
           <a href="https://github.com/thiagocanali" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-2 text-accent underline underline-offset-4">
-            <Github aria-hidden="true" className="size-4" /> GitHub <span className="sr-only">(abre em nova aba)</span>
+            GitHub <ArrowUpRight aria-hidden="true" className="size-4" /> <span className="sr-only">(abre em nova aba)</span>
           </a>
           <a href="https://www.linkedin.com/in/thiagocanali" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-2 text-accent underline underline-offset-4">
-            <Linkedin aria-hidden="true" className="size-4" /> LinkedIn <span className="sr-only">(abre em nova aba)</span>
+            LinkedIn <ArrowUpRight aria-hidden="true" className="size-4" /> <span className="sr-only">(abre em nova aba)</span>
           </a>
         </div>
       </section>
