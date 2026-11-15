@@ -13,7 +13,7 @@
 ## Infraestrutura Neon
 
 - Projeto independente: `thiagocanali-hub`, id `shiny-term-36917717`, organização `org-bold-mountain-42921987`, região `aws-sa-east-1`, PostgreSQL 18.
-- Projeto criado e confirmado pela API Neon. **Nenhuma migration aplicada**, nenhum dado alterado e nenhuma credencial publicada.
+- Projeto criado e confirmado pela API Neon. **Nenhuma migration aplicada no Neon remoto**, nenhum dado alterado e nenhuma credencial publicada.
 - Banco inicial solicitado: `thiagocanali_hub`; confirmar nome e branch reais na API antes de usar.
 - A aplicação permanece apontando ao comportamento antigo enquanto a substituição é preparada; não há deploy de produção.
 
@@ -28,11 +28,15 @@
 
 ## Critérios de aceite ainda pendentes
 
-1. Extrair schema SQL exato das migrations atuais e mapear todas as referências Supabase no repositório.
-2. Versionar schema Neon, roles e testes de isolamento; executar CI.
+1. Extrair schema SQL exato das migrations atuais e mapear todas as referências Supabase no repositório. **Em andamento:** schema editorial independente em `neon/migrations/0001_editorial.sql`; paridade com migration antiga ainda não comprovada.
+2. Versionar schema Neon, roles e testes de isolamento; executar CI. **Em andamento:** teste PostgreSQL 18 isolado em `scripts/test-neon-schema.sh` e workflow Quality; role de runtime e testes de privilégios ainda pendentes.
 3. Implementar leitor PostgreSQL e atualizar lockfile sem remover dependência antes da validação.
 4. Testar migração em ambiente isolado, aplicar schema ao Neon, conferir tabelas e constraints.
 5. Configurar segredo de Preview sem expor URL, validar funcionalmente e só depois planejar produção.
 6. Retirar Supabase apenas após paridade de comportamento e rollback definido.
 
 A migração **não está concluída**; criação de projeto isolado não demonstra funcionamento da aplicação.
+
+## Verificação de conexão sem segredos (2026-11-15)
+
+A API Neon confirmou conexão ao banco `thiagocanali_hub` no projeto `shiny-term-36917717`, versão `18.7`, com zero tabelas públicas no momento da consulta. Essa verificação foi somente leitura; não executou migrations nem publicou credenciais. O CI deve validar o SQL versionado em PostgreSQL 18 descartável antes de aplicar ao banco hospedado.
