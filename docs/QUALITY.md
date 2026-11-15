@@ -70,3 +70,11 @@ CI aprovado para `4fe1667`: https://github.com/thiagocanali/thiagocanali/actions
 - Commit 5616596: workflow Quality run 43447530303 concluído com sucesso e status Vercel success; PR #10 integrada no commit 0988ffa.
 - O log da execução anterior mostrou 7 avisos de vulnerabilidade moderada no audit geral de dependências; severidade, pacotes afetados e impacto em produção ainda exigem relatório `npm audit --json` específico. Não executar `npm audit fix` sem revisão das mudanças.
 - Próxima PR: Home com projetos selecionados. Validação da PR e Preview ainda necessária.
+
+
+## Triagem de dependências — 2026-11-15
+
+- CI da PR #12 (run 43507843556) aprovado, incluindo `npm audit --omit=dev --audit-level=high` que retornou **zero vulnerabilidades de produção**.
+- `npm ci` reportou sete avisos moderados no conjunto completo de dependências, além de aviso de fim de suporte para ESLint 9.39.5. A saída resumida não identifica os pacotes afetados.
+- Próximo incremento: relatório `npm audit --audit-level=moderate` visível no CI sem bloquear alterações por alertas moderados; a verificação de produção de severidade alta/crítica continua obrigatória.
+- Não há justificativa para atualizar dependências às cegas antes de conhecer os caminhos afetados e as correções compatíveis.
