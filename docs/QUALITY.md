@@ -78,3 +78,10 @@ CI aprovado para `4fe1667`: https://github.com/thiagocanali/thiagocanali/actions
 - `npm ci` reportou sete avisos moderados no conjunto completo de dependências, além de aviso de fim de suporte para ESLint 9.39.5. A saída resumida não identifica os pacotes afetados.
 - Próximo incremento: relatório `npm audit --audit-level=moderate` visível no CI sem bloquear alterações por alertas moderados; a verificação de produção de severidade alta/crítica continua obrigatória.
 - Não há justificativa para atualizar dependências às cegas antes de conhecer os caminhos afetados e as correções compatíveis.
+
+### Causa raiz confirmada no CI da PR #13
+
+- Run `43742105299`, job `132897305572`: lint, typecheck, testes unitários, build, HTTP, banco e auditoria de produção passaram.
+- `npm audit --audit-level=moderate` identificou **GHSA-g3hv-75wg-m249** em `minimatch` (intervalo afetado informado: 7.0.0–11.0.0), com caminho `eslint-config-next → typescript-eslint → minimatch`. Os sete avisos são a árvore de dependências transitivas da ferramenta de lint, não sete vulnerabilidades independentes confirmadas.
+- `npm audit --omit=dev --audit-level=high` retornou **0 vulnerabilidades**. O aviso de ESLint 9.39.5 fora de suporte é separado da vulnerabilidade de minimatch.
+- **Correção pendente:** atualizar o lockfile de forma reproduzível com `npm audit fix` (sem `--force`) em ambiente com acesso ao registro, revisar o diff, executar `npm ci`, `npm audit`, lint, typecheck, testes, build e banco antes de integrar. Não aplicar overrides de versão sem confirmar compatibilidade da árvore resolvida.
