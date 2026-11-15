@@ -40,3 +40,9 @@ A migração **não está concluída**; criação de projeto isolado não demons
 ## Verificação de conexão sem segredos (2026-11-15)
 
 A API Neon confirmou conexão ao banco `thiagocanali_hub` no projeto `shiny-term-36917717`, versão `18.7`, com zero tabelas públicas no momento da consulta. Essa verificação foi somente leitura; não executou migrations nem publicou credenciais. O CI deve validar o SQL versionado em PostgreSQL 18 descartável antes de aplicar ao banco hospedado.
+
+## Role de leitura editorial
+
+A role de runtime deve ser criada como login separado, com senha gerada no gerenciador de segredos. Depois de aplicar o schema, executar `psql -v reader_role=NOME_DA_ROLE -f neon/roles/grant_editorial_reader.sql` com credenciais administrativas **somente na etapa de provisionamento**. A role recebe apenas `USAGE` no schema e `SELECT` na view `published_content`; não recebe `SELECT` na tabela de rascunhos. O script não cria usuário nem senha, não deve ser executado automaticamente contra produção e ainda não foi aplicado ao Neon hospedado.
+
+O teste descartável `scripts/test-neon-schema.sh` agora verifica a impossibilidade de leitura da tabela base e escrita por essa role, além do filtro de rascunhos. Evidência final depende do resultado do GitHub Actions no HEAD.
