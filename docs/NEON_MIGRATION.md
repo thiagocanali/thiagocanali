@@ -13,7 +13,7 @@
 ## Infraestrutura Neon
 
 - Projeto independente: `thiagocanali-hub`, id `shiny-term-36917717`, organização `org-bold-mountain-42921987`, região `aws-sa-east-1`, PostgreSQL 18.
-- Projeto criado e confirmado pela API Neon. **Nenhuma migration aplicada no Neon remoto**, nenhum dado alterado e nenhuma credencial publicada.
+- Projeto criado e confirmado pela API Neon. **Schema editorial aplicado no Neon isolado de desenvolvimento em 2026-11-15**, nenhum dado alterado e nenhuma credencial publicada.
 - Banco inicial solicitado: `thiagocanali_hub`; confirmar nome e branch reais na API antes de usar.
 - A aplicação permanece apontando ao comportamento antigo enquanto a substituição é preparada; não há deploy de produção.
 
@@ -39,10 +39,16 @@ A migração **não está concluída**; criação de projeto isolado não demons
 
 ## Verificação de conexão sem segredos (2026-11-15)
 
-A API Neon confirmou conexão ao banco `thiagocanali_hub` no projeto `shiny-term-36917717`, versão `18.7`, com zero tabelas públicas no momento da consulta. Essa verificação foi somente leitura; não executou migrations nem publicou credenciais. O CI deve validar o SQL versionado em PostgreSQL 18 descartável antes de aplicar ao banco hospedado.
+A API Neon confirmou conexão ao banco `thiagocanali_hub` no projeto `shiny-term-36917717`, versão `18.7`, inicialmente com zero tabelas públicas. Após a aprovação do CI do commit `46a41d4` (run `43750879194`), a migration editorial foi aplicada **somente ao banco Neon isolado**, em uma transação. Consulta posterior confirmou 0 registros na tabela e view, `security_barrier=true`, `security_invoker=false` e ausência de privilégio `SELECT` para `PUBLIC` na tabela base. Nenhum segredo foi publicado. O CI deve validar o SQL versionado em PostgreSQL 18 descartável antes de aplicar ao banco hospedado.
 
 ## Role de leitura editorial
 
 A role de runtime deve ser criada como login separado, com senha gerada no gerenciador de segredos. Depois de aplicar o schema, executar `psql -v reader_role=NOME_DA_ROLE -f neon/roles/grant_editorial_reader.sql` com credenciais administrativas **somente na etapa de provisionamento**. A role recebe apenas `USAGE` no schema e `SELECT` na view `published_content`; não recebe `SELECT` na tabela de rascunhos. O script não cria usuário nem senha, não deve ser executado automaticamente contra produção e ainda não foi aplicado ao Neon hospedado.
 
 O teste descartável `scripts/test-neon-schema.sh` agora verifica a impossibilidade de leitura da tabela base e escrita por essa role, além do filtro de rascunhos. Evidência final depende do resultado do GitHub Actions no HEAD.
+
+## Evidências da etapa de provisionamento (2026-11-15)
+
+- GitHub Actions Quality run `43750879194`: **success** no commit `46a41d4`, incluindo PostgreSQL 18 descartável e teste da role de leitura.
+- Neon `thiagocanali_hub`: migration `0001_editorial.sql` aplicada com sucesso; tabela `public.content_entries` e view `public.published_content` criadas, ambas vazias.
+- **Ainda não existe role de runtime provisionada ou conexão do Next.js com Neon.** O app permanece usando Supabase; nenhum deploy de produção foi feito.
