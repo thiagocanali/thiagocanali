@@ -25,6 +25,8 @@ if [[ "$migration_ready" -ne 1 ]]; then
   docker logs "$container" >&2 || true
   exit 1
 fi
+# Re-applying the migration must be safe on the same disposable database.
+docker exec -i "$container" psql -U postgres -v ON_ERROR_STOP=1 < neon/migrations/0001_editorial.sql >/dev/null
 docker exec -i "$container" psql -U postgres -v ON_ERROR_STOP=1 <<'SQL'
 begin;
 insert into public.content_entries (kind,slug,title,status,published_at)
