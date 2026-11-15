@@ -72,12 +72,13 @@ docker exec -i "$container" psql -U postgres -v ON_ERROR_STOP=1 <<'SQL'
 begin;
 insert into public.content_entries (kind,slug,title,status,published_at)
 values ('project','visible','Visible','published',now()-interval '1 day'),
-       ('project','private','Private','draft',null);
+       ('project','private','Private','draft',null),
+       ('project','scheduled','Scheduled','published',now()+interval '1 day');
 set local role editorial_reader;
 do $reader$
 begin
   if (select count(*) from public.published_content) <> 1 then
-    raise exception 'Reader can see unpublished entries';
+    raise exception 'Reader can see drafts or scheduled entries';
   end if;
   begin
     perform count(*) from public.content_entries;
