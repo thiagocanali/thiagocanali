@@ -16,6 +16,8 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      # Block high/critical vulnerabilities in production dependencies; review moderate separately.
+      - run: npm audit --omit=dev --audit-level=high
       - run: npm run lint
       - run: npm run typecheck
       - run: npm test

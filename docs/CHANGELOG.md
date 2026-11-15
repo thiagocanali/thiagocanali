@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-13 — Controle de segurança das dependências
+
+- CI passa a executar `npm audit --omit=dev --audit-level=high` após instalação limpa, bloqueando avisos altos e críticos em dependências de produção.
+- Avisos moderados e dependências de desenvolvimento exigem triagem separada; este gate não equivale a auditoria completa nem corrige pacotes automaticamente.
+- O resultado efetivo depende da execução do novo workflow na PR.
+
+
 ## 2026-11-13 — Projetos selecionados na Home
 
 - Home apresenta três repositórios públicos já documentados no README, com tecnologia e estado de evolução explícitos.
