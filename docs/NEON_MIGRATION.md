@@ -52,3 +52,9 @@ O teste descartável `scripts/test-neon-schema.sh` agora verifica a impossibilid
 - GitHub Actions Quality run `43750879194`: **success** no commit `46a41d4`, incluindo PostgreSQL 18 descartável e teste da role de leitura.
 - Neon `thiagocanali_hub`: migration `0001_editorial.sql` aplicada com sucesso; tabela `public.content_entries` e view `public.published_content` criadas, ambas vazias.
 - **Ainda não existe role de runtime provisionada ou conexão do Next.js com Neon.** O app permanece usando Supabase; nenhum deploy de produção foi feito.
+
+## Role hospedada e limites de validação — 2026-11-15
+
+A role `hub_editorial_reader` foi criada no banco Neon **sem LOGIN**, por segurança, e recebeu apenas `USAGE` no schema `public` e `SELECT` na view `published_content`. Consulta direta aos catálogos confirmou `rolcanlogin=false`, `rolsuper=false`, `rolcreaterole=false`, `rolcreatedb=false`, `base_read=false`, `view_read=true` e `base_write=false`. Isso não equivale a uma credencial de aplicação pronta: ainda falta provisionar login com segredo gerenciado e sem grants automáticos nas tabelas base.
+
+Uma tentativa de `SET LOCAL ROLE hub_editorial_reader` pela conexão gerenciada do Neon foi recusada (`42501`, permission denied to set role); portanto **não há teste funcional de impersonação hospedada aprovado**. Os testes reais de acesso com role dedicada passaram somente no PostgreSQL 18 descartável do GitHub Actions (run `43751196448`, commit `b11b096`). Não usar uma role `read_only` genérica que conceda SELECT em todas as tabelas, pois isso exporia rascunhos. O provisionamento seguro do login e a substituição do leitor Supabase continuam pendentes.
