@@ -87,3 +87,18 @@ O script sobe e encerra seu próprio next start em uma porta disponível, sem cr
 Commit de código `4fe1667802176210359a2b29d43e20aaac4cc7b5`: Preview Vercel READY em https://thiagocanali-1l8dmahix-thiagocanalis-projects.vercel.app. Verificação autorizada confirmou `/projects` HTTP 200 com canonical de produção e meta/header noindex; robots Disallow: / e sitemap vazio. Headers CSP, X-Frame-Options e Permissions-Policy confirmados no deployment.
 
 CI Quality concluído com sucesso no run 43205848912, incluindo smoke HTTP e testes PostgreSQL. PR #7 aponta diretamente para main e inclui a integração editorial do #6. Nenhuma promoção manual ou mudança de infraestrutura foi executada nesta revisão.
+
+## Orçamento de deploys — investigação de 2026-11-15
+
+A API da Vercel confirmou o projeto `prj_MjjPoUY3ukIzTRxAfleyZHdPca9S` (`thiagocanali`), ligado ao GitHub. Há **um deployment por push/commit intermediário** em branches de PR: na branch `fix/header-keyboard-focus-20261115`, `e54bf6c` gerou deployment cancelado e `af2033d` gerou outro deployment READY. A branch `chore/ci-full-audit-visibility-20261115` também gerou deployments separados para `6eb9cc7`, `12aa1d1` e `bb0874e`. O CI Quality executa lint, typecheck, testes, build, smoke HTTP e PostgreSQL sem depender da Vercel.
+
+### Política operacional (sem alterar produção)
+
+1. Fazer commits locais frequentes para checkpoints e agrupar **pushes** de alterações relacionadas após `npm run lint`, `npm run typecheck`, `npm test` e `npm run build` quando viáveis. Cada push da branch conectada pode consumir outro deployment mesmo que o anterior seja cancelado.
+2. Manter GitHub Actions como validação primária. Usar Preview apenas para revisão visual, configuração de ambiente, integração hospedada e aceite final; não usar `READY` como prova de autenticação, API ou banco funcionais.
+3. Não criar branches/PRs extras para documentação de uma mesma entrega; agrupar documentação, código e testes em um único push de validação quando possível.
+4. Quando a cota gratuita for atingida, **não repetir deployments**; continuar CI, testes e correções independentes. Não promover Preview nem alterar produção para contornar a cota.
+5. Investigar em **Vercel → Project → Settings → Git → Ignored Build Step** a possibilidade de um comando que ignore builds de commits sem mudanças de runtime. Esse comando deve ser revisado em PR e validado em Preview antes de qualquer ativação; **não foi configurado** nesta revisão. Não presumir que ignorar um build evita consumir a cota de criação de deployments.
+6. Considerar controle por branch/ambiente somente após confirmar suporte e comportamento na configuração efetiva de Git Deployment; não alterar Production Branch, proteção SSO, domínios ou regras de segurança nesta revisão.
+
+**Observação:** `get_project` expõe projeto, Node 22 e proteção SSO, mas não confirma os valores internos de Git Deployment ou Ignored Build Step. Assim, nenhuma configuração de preview foi alterada ou declarada ativa. Os registros observados demonstram disparos por commit; a redução efetiva do consumo dependerá da frequência de pushes e, eventualmente, de configuração validada no painel.
