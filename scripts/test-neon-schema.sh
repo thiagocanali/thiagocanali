@@ -37,4 +37,32 @@ begin
 end $$;
 rollback;
 SQL
-echo 'Neon schema tests passed on isolated PostgreSQL 18.'
+# Test a simulated runtime reader with explicit least-privilege grants.
+docker exec -i "$container" psql -U postgres -v ON_ERROR_STOP=1 <<'SQL'
+begin;
+create role editorial_reader nologin;
+grant usage on schema public to editorial_reader;
+grant select on public.published_content to editorial_reader;
+insert into public.content_entries (kind,slug,title,status,published_at)
+values ('project','visible','Visible','published',now()-interval '1 day'),
+       ('project','private','Private','draft',null);
+set local role editorial_reader;
+do $
+begin
+  if (select count(*) from public.published_content) <> 1 then
+    raise exception 'Reader can see unpublished entries';
+  end if;
+  begin
+    perform count(*) from public.content_entries;
+    raise exception 'Reader accessed base table';
+  exception when insufficient_privilege then null;
+  end;
+  begin
+    insert into public.content_entries (kind,slug,title) values ('article','intrusion','Denied');
+    raise exception 'Reader inserted editorial entry';
+  exception when insufficient_privilege then null;
+  end;
+end $;
+rollback;
+SQL
+echo 'Neon schema and least-privilege reader tests passed on isolated PostgreSQL 18.'
