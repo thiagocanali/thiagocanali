@@ -60,7 +60,7 @@ insert into public.content_entries (kind,slug,title,status,published_at)
 values ('project','visible','Visible','published',now()-interval '1 day'),
        ('project','private','Private','draft',null);
 set local role editorial_reader;
-do $
+do $reader$
 begin
   if (select count(*) from public.published_content) <> 1 then
     raise exception 'Reader can see unpublished entries';
@@ -75,7 +75,7 @@ begin
     raise exception 'Reader inserted editorial entry';
   exception when insufficient_privilege then null;
   end;
-end $;
+end $reader$;
 rollback;
 SQL
 echo 'Neon schema and least-privilege reader tests passed on isolated PostgreSQL 18.'
