@@ -43,6 +43,18 @@ begin
   exception when check_violation then null;
   end;
   begin
+    insert into public.content_entries (kind,slug,title,status,published_at)
+    values ('project','visible','Duplicate','published',now());
+    raise exception 'Duplicate kind/slug accepted';
+  exception when unique_violation then null;
+  end;
+  begin
+    insert into public.content_entries (kind,slug,title)
+    values ('article','invalid slug','Invalid');
+    raise exception 'Invalid slug accepted';
+  exception when check_violation then null;
+  end;
+  begin
     insert into public.content_entries (kind,slug,title,external_url)
     values ('article','unsafe','Unsafe','javascript:alert(1)');
     raise exception 'Unsafe URL accepted';
@@ -68,6 +80,11 @@ begin
   begin
     perform count(*) from public.content_entries;
     raise exception 'Reader accessed base table';
+  exception when insufficient_privilege then null;
+  end;
+  begin
+    update public.published_content set title = 'Tampered' where slug = 'visible';
+    raise exception 'Reader modified published view';
   exception when insufficient_privilege then null;
   end;
   begin
