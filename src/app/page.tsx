@@ -69,14 +69,14 @@ export default function HomePage() {
             <div className="mt-10 flex flex-wrap gap-3">
               <Link
                 href="/projects"
-                className="inline-flex items-center gap-2 rounded-md border border-accent bg-accent px-5 py-3 text-sm font-semibold text-background transition-transform hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 rounded-md border border-accent bg-accent px-5 py-3 text-sm font-semibold text-background transition-transform hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
               >
                 Explorar projetos
                 <ArrowUpRight aria-hidden="true" className="size-4" />
               </Link>
               <Link
                 href="/about"
-                className="inline-flex items-center rounded-md border border-border px-5 py-3 text-sm font-medium text-text transition-colors hover:border-accent/60 hover:text-accent"
+                className="inline-flex items-center rounded-md border border-border px-5 py-3 text-sm font-medium text-text transition-colors hover:border-accent/60 hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
               >
                 Sobre
               </Link>
@@ -88,14 +88,14 @@ export default function HomePage() {
               <Link
                 key={href}
                 href={href}
-                className="group rounded-lg border border-border/70 bg-surface/60 p-5 transition-colors hover:border-accent/50"
+                className="group rounded-lg border border-border/70 bg-surface/60 p-5 transition-colors hover:border-accent/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
               >
                 <Icon aria-hidden="true" className="mb-8 size-5 text-accent" />
                 <h2 className="text-lg font-medium">{title}</h2>
                 <p className="mt-2 text-sm leading-6 text-text-muted">
                   {description}
                 </p>
-                <span className="mt-6 inline-block font-mono text-xs text-text-muted transition-colors group-hover:text-accent">
+                <span className="mt-6 inline-block font-mono text-xs text-text-muted transition-colors group-hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">
                   /{href.replace("/", "")}
                 </span>
               </Link>
@@ -114,7 +114,7 @@ export default function HomePage() {
                 para não confundir desenvolvimento ativo com produto concluído.
               </p>
             </div>
-            <Link href="/projects" className="inline-flex min-h-11 items-center gap-2 text-sm text-accent underline underline-offset-4">
+            <Link href="/projects" className="inline-flex min-h-11 items-center gap-2 text-sm text-accent underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">
               Ver área de projetos <ArrowUpRight aria-hidden="true" className="size-4" />
             </Link>
           </div>
@@ -124,7 +124,7 @@ export default function HomePage() {
                 <h3 className="text-xl font-medium">{project.title}</h3>
                 <p className="mt-3 flex-1 text-sm leading-6 text-text-muted">{project.description}</p>
                 <p className="mt-5 font-mono text-xs leading-5 text-text-muted">{project.stack}</p>
-                <a href={project.href} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex min-h-11 items-center gap-2 text-sm text-accent underline underline-offset-4">
+                <a href={project.href} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex min-h-11 items-center gap-2 text-sm text-accent underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">
                   Ver repositório <ArrowUpRight aria-hidden="true" className="size-4" />
                   <span className="sr-only">de {project.title} (abre em nova aba)</span>
                 </a>
