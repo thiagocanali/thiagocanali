@@ -68,6 +68,8 @@ SQL
 # Test a simulated runtime reader with explicit least-privilege grants.
 docker exec "$container" psql -U postgres -v ON_ERROR_STOP=1 -c 'create role editorial_reader nologin'
 docker exec -i "$container" psql -U postgres -v ON_ERROR_STOP=1 -v reader_role=editorial_reader < neon/roles/grant_editorial_reader.sql
+# Repeat grants to detect non-idempotent privilege provisioning.
+docker exec -i "$container" psql -U postgres -v ON_ERROR_STOP=1 -v reader_role=editorial_reader < neon/roles/grant_editorial_reader.sql >/dev/null
 docker exec -i "$container" psql -U postgres -v ON_ERROR_STOP=1 <<'SQL'
 begin;
 insert into public.content_entries (kind,slug,title,status,published_at)
