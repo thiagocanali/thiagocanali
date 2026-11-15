@@ -27,6 +27,7 @@ if [[ "$migration_ready" -ne 1 ]]; then
 fi
 # Re-applying the migration must be safe on the same disposable database.
 docker exec -i "$container" psql -U postgres -v ON_ERROR_STOP=1 < neon/migrations/0001_editorial.sql >/dev/null
+docker exec -i "$container" psql -U postgres -v ON_ERROR_STOP=1 < neon/migrations/0002_strict_editorial_urls.sql >/dev/null
 docker exec -i "$container" psql -U postgres -v ON_ERROR_STOP=1 <<'SQL'
 begin;
 insert into public.content_entries (kind,slug,title,status,published_at)
@@ -54,6 +55,12 @@ begin
     insert into public.content_entries (kind,slug,title)
     values ('article','invalid slug','Invalid');
     raise exception 'Invalid slug accepted';
+  exception when check_violation then null;
+  end;
+  begin
+    insert into public.content_entries (kind,slug,title,repository_url)
+    values ('article','userinfo','Userinfo','https://example.com@evil.example/path');
+    raise exception 'Credential-bearing URL accepted';
   exception when check_violation then null;
   end;
   begin
