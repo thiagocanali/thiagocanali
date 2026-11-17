@@ -18,6 +18,19 @@ jobs:
       - run: npm ci
       # Block high/critical vulnerabilities in production dependencies; review moderate separately.
       - run: npm audit --omit=dev --audit-level=high
+      - name: Report moderate dependency advisories
+        run: |
+          set +e
+          npm audit --audit-level=moderate
+          audit_status=$?
+          set -e
+          if [ "$audit_status" -gt 1 ]; then
+            echo "npm audit failed unexpectedly with exit code $audit_status" >&2
+            exit "$audit_status"
+          fi
+          if [ "$audit_status" -eq 1 ]; then
+            echo "::warning::Moderate or higher dependency advisories found; review the audit output."
+          fi
       - run: npm run lint
       - run: npm run typecheck
       - run: npm test
