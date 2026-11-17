@@ -46,6 +46,11 @@ try {
     assert.equal(response.headers.get("x-robots-tag"), null, "Production must not inherit preview noindex");
     assert.equal(response.headers.get("x-powered-by"), null);
     const html = await response.text();
+    // Guard the shared keyboard skip link and each route's main landmark.
+    assert.match(html, /<html\b[^>]*lang="pt-BR"/, `${path}: missing document language`);
+    assert.match(html, /<a\b[^>]*href="#main-content"[^>]*>Pular para o conteúdo<\/a>/, `${path}: missing skip link`);
+    assert.match(html, /<main\b[^>]*id="main-content"/, `${path}: missing main landmark`);
+    assert.match(html, /<nav\b[^>]*aria-label="Navegação principal"/, `${path}: missing named navigation`);
     const canonical = html.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
     assert.equal(canonical?.replace(/\/$/, ""), origin + (path === "/" ? "" : path), path);
     assert.equal(meta(html, "robots"), "index, follow");
