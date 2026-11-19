@@ -39,3 +39,6 @@ jobs:
           VERCEL_ENV: production
       - run: npm run test:http
       - run: npm run test:db
+
+      - name: Validate Neon editorial schema
+        run: bash scripts/test-neon-schema.sh

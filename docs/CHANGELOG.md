@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-15 — Início da migração Neon
+
+- Projeto Neon dedicado criado em São Paulo; documentação do inventário e critérios de migração em `docs/NEON_MIGRATION.md`.
+- Leitor Supabase preservado até que o substituto PostgreSQL passe pelos testes e seja configurado por ambiente; nenhuma alteração de produção.
+
+
 ## 2026-11-13 — Controle de segurança das dependências
 
 - CI passa a executar `npm audit --omit=dev --audit-level=high` após instalação limpa, bloqueando avisos altos e críticos em dependências de produção.
