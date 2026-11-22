@@ -1,12 +1,26 @@
 # Olá, eu sou o Thiago Canali 👋
 
-Construo aplicações web e aprendo colocando ideias em prática.
+Construo aplicações web, jogos e produtos digitais, combinando desenvolvimento de software, experiência em infraestrutura e IA aplicada ao desenvolvimento.
 
-Meu GitHub reúne projetos próprios, experimentos e minha trajetória de estudos. Hoje estou evoluindo produtos para educação, organização pessoal e presença digital, usando IA como apoio ao desenvolvimento.
+Meu GitHub reúne projetos próprios, experimentos e minha evolução técnica. Gosto de transformar ideias em experiências utilizáveis, com atenção à arquitetura, qualidade e experiência do usuário.
 
 [LinkedIn](https://www.linkedin.com/in/thiagocanali) · [Contato por e-mail](mailto:thiagocanali@hotmail.com)
 
-## Projetos em construção
+## 🌟 Projeto em destaque — Peregrino
+
+### [🎮 Peregrino — Jogar no navegador](https://jogoperegrino.vercel.app)
+
+**Peregrino** é uma aventura narrativa 2D desenvolvida com **Godot e GDScript**, que combina exploração, personagens, diálogos, missões e reflexões inspiradas em relatos bíblicos.
+
+No primeiro capítulo, **A Busca**, Elias chega à Vila da Figueira e conhece personagens cujas histórias se conectam. O projeto explora sistemas de interação, progressão de missões, caderno de descobertas e persistência de progresso.
+
+**Tecnologias:** Godot 4, GDScript e exportação Web.  
+**Destaques técnicos:** arquitetura modular, diálogos, gerenciamento de estados, salvamento e testes de integração.  
+**Experimente:** [jogoperegrino.vercel.app](https://jogoperegrino.vercel.app)
+
+*Projeto em desenvolvimento. O código-fonte permanece privado nesta fase.*
+
+## Outros projetos em construção
 
 ### [Me Aprovaê](https://github.com/thiagocanali/MeAprovae)
 Plataforma de estudos para concursos públicos, com questões, revisão e acompanhamento de desempenho.
