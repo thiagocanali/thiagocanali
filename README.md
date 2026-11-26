@@ -1,53 +1,80 @@
-# Olá, eu sou o Thiago Canali 👋
+<p align="center">
+  <img src="./profile-banner.svg" alt="THIAGO CANALI — Web, games and digital experiences" width="100%" />
+</p>
 
-Construo aplicações web, jogos e produtos digitais, combinando desenvolvimento de software, experiência em infraestrutura e IA aplicada ao desenvolvimento.
+<p align="center">
+  <strong>Desenvolvimento de software · Jogos · Infraestrutura</strong><br />
+  <sub>Software development · Games · Infrastructure</sub>
+</p>
 
-Meu GitHub reúne projetos próprios, experimentos e minha evolução técnica. Gosto de transformar ideias em experiências utilizáveis, com atenção à arquitetura, qualidade e experiência do usuário.
+<p align="center">
+  <a href="https://linkedin.com/in/thiagocanali"><strong>LINKEDIN ↗</strong></a>
+  &nbsp; / &nbsp;
+  <a href="https://jogoperegrino.vercel.app"><strong>JOGAR PEREGRINO · PLAY ↗</strong></a>
+  &nbsp; / &nbsp;
+  <a href="mailto:thiagocanali@hotmail.com">CONTATO · CONTACT</a>
+</p>
 
-[LinkedIn](https://www.linkedin.com/in/thiagocanali) · [Contato por e-mail](mailto:thiagocanali@hotmail.com)
+## Sobre · About
 
-## 🌟 Projeto em destaque — Peregrino
+**Sou Thiago Canali.** Construo aplicações web, jogos e produtos digitais, combinando desenvolvimento de software, experiência em infraestrutura e IA como apoio ao desenvolvimento. Transformo ideias em experiências utilizáveis, com atenção à arquitetura, qualidade e experiência do usuário.
 
-### [🎮 Peregrino — Jogar no navegador](https://jogoperegrino.vercel.app)
+**I'm Thiago Canali.** I build web applications, games and digital products, combining software development, infrastructure experience and AI-assisted development. I turn ideas into usable experiences, with attention to architecture, quality and user experience.
 
-**Peregrino** é uma aventura narrativa 2D desenvolvida com **Godot e GDScript**, que combina exploração, personagens, diálogos, missões e reflexões inspiradas em relatos bíblicos.
+## Projeto principal · Featured project
 
-No primeiro capítulo, **A Busca**, Elias chega à Vila da Figueira e conhece personagens cujas histórias se conectam. O projeto explora sistemas de interação, progressão de missões, caderno de descobertas e persistência de progresso.
+### Peregrino
+**Uma jornada de exploração e descobertas.**  
+*A journey of exploration and discovery.*
 
-**Tecnologias:** Godot 4, GDScript e exportação Web.  
-**Destaques técnicos:** arquitetura modular, diálogos, gerenciamento de estados, salvamento e testes de integração.  
-**Experimente:** [jogoperegrino.vercel.app](https://jogoperegrino.vercel.app)
+Aventura narrativa 2D com exploração, personagens, diálogos, missões e reflexões inspiradas em relatos bíblicos. No primeiro capítulo, **A Busca**, Elias chega à Vila da Figueira e encontra histórias que se conectam.
 
-*Projeto em desenvolvimento. O código-fonte permanece privado nesta fase.*
+*A 2D narrative adventure with exploration, characters, dialogue, quests and reflections inspired by biblical accounts. In the first chapter, **A Busca**, Elias arrives in Vila da Figueira and discovers interconnected stories.*
 
-## Outros projetos em construção
+| Tecnologia · Technology | Sistemas · Systems | Estado · Status |
+| :--- | :--- | :--- |
+| Godot 4 · GDScript · Web | Arquitetura modular, diálogos, estados, missões e salvamento / Modular architecture, dialogue, states, quests and saves | Em desenvolvimento · In development |
 
-### [Me Aprovaê](https://github.com/thiagocanali/MeAprovae)
-Plataforma de estudos para concursos públicos, com questões, revisão e acompanhamento de desempenho.
+**[Jogar no navegador · Play in your browser ↗](https://jogoperegrino.vercel.app)**
 
-**Tecnologias:** Nuxt, Vue, TypeScript e PostgreSQL.  
-**Etapa:** núcleo de estudos em validação; conteúdo e fluxos continuam em revisão.
+<sub>Código-fonte privado nesta fase. · Source code is private at this stage.</sub>
 
-### [taskDesk](https://github.com/thiagocanali/taskDesk)
-Organização pessoal de tarefas, com prioridades, histórico e acesso por usuário.
+## Outros projetos · More projects
 
-**Tecnologias:** Vue, TypeScript, Node.js, Express e Prisma.  
-**Etapa:** CRUD e autenticação implementados; ativação hospedada e integrações de e-mail pendentes.
+| Projeto · Project | Proposta · Purpose | Tecnologias · Technologies |
+| :--- | :--- | :--- |
+| **[Me Aprovaê](https://github.com/thiagocanali/MeAprovae)** | Estudos para concursos: questões, revisão e desempenho. / Exam preparation: questions, review and performance. | Nuxt · Vue · TypeScript · PostgreSQL |
+| **[taskDesk](https://github.com/thiagocanali/taskDesk)** | Tarefas com prioridades, histórico e acesso por usuário. / Tasks with priorities, history and per-user access. | Vue · TypeScript · Node.js · Express · Prisma |
+| **[AcolheMente](https://github.com/thiagocanali/AcolheMente)** | Aproximar pessoas e profissionais de Psicologia. / Connecting people and psychology professionals. | Vue · TypeScript · Vite |
 
-### [AcolheMente](https://github.com/thiagocanali/AcolheMente)
-Projeto para aproximar pessoas e profissionais de Psicologia, começando pela apresentação profissional e solicitação de agendamento.
+<details>
+<summary>Estágio dos projetos · Project status</summary>
 
-**Tecnologias:** Vue, TypeScript e Vite.  
-**Etapa:** página institucional implementada; fluxo administrativo em preparação.
+- **Me Aprovaê:** núcleo de estudos em validação; conteúdo e fluxos em revisão. / Study core under validation; content and flows under review.
+- **taskDesk:** CRUD e autenticação implementados; ativação hospedada e integrações de e-mail pendentes. / CRUD and authentication implemented; hosted activation and email integrations pending.
+- **AcolheMente:** página institucional implementada; fluxo administrativo em preparação. / Institutional page implemented; administrative flow in preparation.
 
-## O que estou desenvolvendo
+</details>
 
-- Interfaces com Vue, Nuxt, React e Next.js.
-- APIs, persistência e autenticação para aplicações web.
-- Um processo de desenvolvimento com documentação, testes e revisão de mudanças.
-- Meu [site pessoal](https://github.com/thiagocanali/thiagocanali), também em construção.
+## Tecnologias · Technologies
 
-Os repositórios de cursos e exercícios registram meu aprendizado ao longo do tempo. Os projetos acima são uma seleção inicial dos trabalhos que estou evoluindo agora.
+| Área · Area | Ferramentas presentes nos projetos · Tools used across projects |
+| :--- | :--- |
+| **Interfaces · Front-end** | TypeScript · Vue · Nuxt · React · Next.js · Vite |
+| **APIs e dados · APIs & data** | Node.js · Express · PostgreSQL · Prisma |
+| **Jogos · Games** | Godot 4 · GDScript · Exportação Web / Web export |
+| **Qualidade · Quality** | Documentação · Testes · Revisão de mudanças / Documentation · Testing · Change review |
+
+<sub>As tecnologias variam por projeto; as etapas de implementação estão nos respectivos READMEs. · Technologies vary by project; implementation stages are documented in each README.</sub>
+
+---
+
+<div align="center">
+  <h2>THIAGO AI</h2>
+  <p><code>COMING SOON</code></p>
+  <p><sub>Uma próxima página desta jornada.<br />The next page of this journey.</sub></p>
+  <p><sub>Apresentação visual de uma ideia futura. Nenhuma funcionalidade disponível.<br />Visual presentation of a future idea. No functionality available.</sub></p>
+</div>
 
 ---
 
@@ -131,3 +158,8 @@ Canonical e compartilhamento usam o domínio público verificado. Indexação s�
 `npm run test:http` exige um build feito com `VERCEL_ENV=production` e verifica o servidor real numa porta temporária. Não conecta ao Supabase. Os detalhes de segurança, ambientes e limites estão em SECURITY.md, DEPLOYMENT.md e QUALITY.md.
 
 </details>
+
+<p align="center">
+  <sub>THIAGO CANALI &nbsp; / &nbsp; SOFTWARE · GAMES · DIGITAL EXPERIENCES</sub><br />
+  <a href="https://linkedin.com/in/thiagocanali"><strong>Vamos conversar · Let's connect ↗</strong></a>
+</p>
