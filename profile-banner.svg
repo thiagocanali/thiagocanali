@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">THIAGO CANALI</title>
+  <desc id="desc">Banner tecnológico azul elétrico e ciano. Web, games and digital experiences. Elementos geométricos de circuitos sobre fundo azul profundo.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071322"/><stop offset="1" stop-color="#0b2440"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#257cff"/><stop offset="1" stop-color="#48e4ef"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#1769b5" stop-opacity=".35"/><stop offset="1" stop-color="#1769b5" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#80bcff" stroke-opacity=".065"/></pattern>
+  </defs>
+  <rect width="1200" height="320" rx="16" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="318" rx="15" fill="none" stroke="#24537c"/>
+  <rect x="1" y="1" width="1198" height="318" rx="15" fill="url(#grid)"/>
+  <ellipse cx="1005" cy="155" rx="285" ry="240" fill="url(#halo)"/>
+  <g fill="none" stroke="url(#accent)" stroke-width="1.5">
+    <path d="M856 72h87l40 40h95l47-47h74" opacity=".75"/>
+    <path d="M800 237h129l48-48h112l47 47h63" opacity=".6"/>
+    <path d="M941 1v46l57 57v107l48 48v60" opacity=".35"/>
+    <path d="m925 122 58-34 59 34v68l-59 34-58-34z" opacity=".8"/>
+    <path d="m945 134 38-22 39 22v44l-39 22-38-22z" opacity=".35"/>
+    <path d="M64 259h122M192 259h31" stroke-width="3"/>
+  </g>
+  <g fill="#4de4ee"><circle cx="856" cy="72" r="3"/><circle cx="800" cy="237" r="3"/><circle cx="1078" cy="112" r="3"/><circle cx="1089" cy="189" r="3"/></g>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="64" y="77" fill="#72dce9" font-size="12" font-weight="600" letter-spacing="3">SOFTWARE / GAMES / INFRASTRUCTURE</text>
+    <text x="59" y="160" fill="#f1f7ff" font-size="64" font-weight="700" letter-spacing="3">THIAGO CANALI</text>
+    <text x="64" y="204" fill="#adc5de" font-size="19" letter-spacing="1">Web, games and digital experiences.</text>
+    <text x="64" y="290" fill="#72a8d3" font-size="10" letter-spacing="2.5">IDEIAS EM EXPERIÊNCIAS / IDEAS INTO EXPERIENCES</text>
+    <text x="972" y="166" fill="#61e4ef" font-size="30" font-weight="600">&gt;_</text>
+  </g>
+</svg>
